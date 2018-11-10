@@ -10,6 +10,10 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="fonts/FuturaPT/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/homepage.css">
 </head>
@@ -144,6 +148,10 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="headmenu-slider_counter">
+            <span class="currentSlide"></span>/
+            <span class="slideCount"></span>
         </div>
     </header>
     <main class='page-index'>
@@ -369,6 +377,28 @@
             </nav>
         </div>
     </footer>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.headmenu-slider').slick({
+            dots: true,
+        });
+
+        let currentSlide = $('.headmenu-slider').slick('slickCurrentSlide') + 1;
+        let slideCount=$(".headmenu-slider").slick("getSlick").slideCount;
+        $('.currentSlide').html(currentSlide);
+        $('.slideCount').html(slideCount);
+
+        $(".headmenu-slider").on("afterChange", function(event, slick, currentSlide, nextSlide){
+            $(".currentSlide").text(currentSlide + 1);
+        });
+
+      });
+    </script>
 </body>
 
 </html>
