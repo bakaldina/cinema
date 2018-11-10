@@ -25,9 +25,6 @@
     background-image: url(../assets/svg/arrow_grey.svg);
     background-position: center;
     vertical-align: middle;
-
-
-
 }
 .seans{
     width: 380px;
@@ -60,6 +57,7 @@
 .calendar-week{
     display: flex;
     justify-content: center;
+    margin-bottom: 45px;
 }
 .calendar-day{
     border-radius: 6px;
@@ -69,28 +67,42 @@
     height: 92px;
     margin: 15px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: rgb(68, 61, 59);
 }
-.calendar-day--active{ 
+.calendar-day.active,
+.calendar-day:hover,
+.calendar-day:focus { 
     background-color: rgb(251, 116, 74);
+    color: #fff!important;
 }
 .calendar-day__numb{
     font-size: 34px;
-    color: rgb(68, 61, 59);
-    line-height: 1.2;      
+    line-height: 1.2;
+    font-weight: 600;      
 }
 .calendar-day__text{
-    font-size: 16.495px;
+    font-size: 16px;
     color: rgb(146, 145, 145);
 }
 .calendar-day__month{
-    font-size: 16.495px;
-    color: rgb(68, 61, 59);      
+    font-size: 16px;   
 }
-.calendar-day--active .calendar-day__numb,
-.calendar-day--active .calendar-day__month{
-   color:#fff; 
+.calendar-modal__ico {
+    background-image: url(../assets/pict/calendar.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    margin-bottom: 5px;
 }
-
+.calendar-modal {
+    border: none;
+    text-align: left;
+}
 .page-index{
     padding: 50px 0 75px;
     background-color: #f8f8f8;
@@ -100,10 +112,12 @@
     background-size: 100% 115px;
     background-color: #fff;
     background-repeat: no-repeat;
-    padding: 40px 10px;
+    padding: 40px 15px 25px 15px;
     max-width: 460px;
+    border: 1px solid rgb(220, 219, 219);
+    border-radius: 4px;
 }
-
+  
 .film-poster {
     border-radius: 4px;
     background-image: url(../assets/pict/poster.jpg);
@@ -130,7 +144,7 @@
 .film-title{
     font-size: 24px;
     color: #fff;
-    margin-bottom: 40px;
+    margin-bottom: 26px;
 }
 .film-time {
     border-style: solid;
@@ -139,65 +153,109 @@
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
     border-top:3px solid rgb(252, 117, 74);   
-    padding: 5px;
-    min-width: 88px;
+    padding: 5px 10px;
+    min-width: 85px;
     height: 51px;
     display:flex;
     flex-direction: column;
+    margin-right: 10px;
+}
+.film-time.active,
+.film-time:hover,
+.film-time:focus {
+    background-color: rgb(251, 116, 74);
+}
+.film-time.active .film-time_hour,
+.film-time.active .film-time_cost,
+.film-time:hover .film-time_hour,
+.film-time:hover .film-time_cost,
+.film-time:focus .film-time_hour,
+.film-time:focus .film-time_cost {
+    color: #fff;
 }
 .line{
     display: flex;
     margin-bottom: 20px;
 }
 .line-desc {
-    padding-top: 20px;
+    padding-top: 35px;
 }
 .fil{
     display:flex;
-    justify-content: space-between;
+
 }
 .film-time_hour{
-   font-size: 16px;
+    font-size: 16px;
     color: rgb(68, 61, 59); 
+    font-weight: 600;
 }
 .film-time_cost{
     font-size: 13px;
     color: rgb(146, 145, 145);      
 }
 .film-tags span{
-    padding: 5px 8px;
+    padding: 4px 12px;
     border-radius: 4px;
+    font-size: 16px;
     border: 1px solid rgb(239, 239, 239);
-    color: rgb(239, 239, 239);
+    color: #929191;
 }
-
+  
 .film-extend{
-    padding: 5px;
+    padding: 5px 10px;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(220, 219, 219);
     border-radius: 4px;
     background-color: rgb(239, 239, 239);
- 
-    width: 144px;
     height: 51px;
-
     display: flex;
     flex-direction: column;
-    
     font-size: 13px;
     color: rgb(146, 145, 145);
-      
-
+    padding-right: 20px;
 }
-
+.film-extend span {
+    margin-right: 10px;
+}
 .film-extend span:first-child{
     font-weight: 800;
     font-size: 16px;
     color: rgb(68, 61, 59);      
 }
-
-
+.film-extend:hover,
+.film-extend:focus {
+    background-image: -moz-linear-gradient( -20deg, rgb(182,251,255) 0%, rgb(7,163,240) 0%, rgb(0,97,218) 100%);
+    background-image: -webkit-linear-gradient( -20deg, rgb(182,251,255) 0%, rgb(7,163,240) 0%, rgb(0,97,218) 100%);
+    background-image: -ms-linear-gradient( -20deg, rgb(182,251,255) 0%, rgb(7,163,240) 0%, rgb(0,97,218) 100%);
+    color: #fff;
+}
+.film-extend:hover span:first-child,
+.film-extend:focus span:first-child {
+    color: #fff;
+}
+.film-extend-neva {
+    background-image: -moz-linear-gradient( -20deg, rgb(182,251,255) 0%, rgb(7,163,240) 0%, rgb(0,97,218) 100%);
+    background-image: -webkit-linear-gradient( -20deg, rgb(182,251,255) 0%, rgb(7,163,240) 0%, rgb(0,97,218) 100%);
+    background-image: -ms-linear-gradient( -20deg, rgb(182,251,255) 0%, rgb(7,163,240) 0%, rgb(0,97,218) 100%);
+    padding-right: 25px;
+    position: relative;
+    color: #fff;
+}
+.film-extend-neva span:first-child{
+    color: #fff;
+}
+.film-extend-neva:after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(../assets/svg/arrow_white.svg);
+    background-position: center;
+    right: 8px;
+    top: 16px;
+}
 /*todo поменять названия классов на подходящии*/
 .description .firstline{
     color: rgb(255, 255, 255);
@@ -216,13 +274,13 @@
 }
 .description .firstline .t1{
     margin-right: 20px;
-    background-image: url(assets/img/kinopoisk.png);
+    background-image: url(../assets/img/kinopoisk.png);
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 25px;
 }
 .description .firstline .im1{
-    background-image: url(assets/img/imdb.png);
+    background-image: url(../assets/img/imdb.png);
     background-repeat: no-repeat;
     background-position: left center;
     padding-left: 50px;
@@ -247,7 +305,7 @@
     border-radius: 4px;
     background-color: rgba(252, 117, 74, 0);
     box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.33);
-    background-image: url(assets/img/play-circle.png);
+    background-image: url(../assets/img/play-circle.png);
     background-repeat: no-repeat;
     background-position: 10px;
       
