@@ -101,19 +101,21 @@ header.header-m{
 
 .head-user,
 .header-m .x-menu-item span{
-    color:#fff;
+    color:var(--white);
 }
 .header-m .x-sizer {
     border-bottom: 3px solid var(--orange);
 }
 .head-logo--typed{
     font-size: 18px;
-    color: rgb(255, 255, 255);
+    color: var(--white);
     font-weight: bold;
     line-height: 1.2;      
-
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+.head-logo a{
+    color: var(--white);
 }
 
 .headmenu-desktop{
@@ -123,7 +125,6 @@ header.header-m{
 .container{
     max-width: 1450px; /* 1450 */
     margin: auto;
-
     height: 100%;
     position: relative;
 }
@@ -131,7 +132,7 @@ header.header-m{
 .head-menu-back{
     margin-left: 30px;
     padding-left: 30px;
-    border-left: 1px solid;
+    border-left: 1px solid var(--light-grey);
     height: 40px;
     line-height: 40px;
 }
