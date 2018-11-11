@@ -1,3 +1,12 @@
+:root {
+    --orange:rgb(252, 117, 74);  
+    --white:#ffffff;
+    --black:#000000;
+    --grey-text:rgb(146, 145, 145);
+    --grey-block:#4b535a;
+    --light-grey:rgba(255, 255, 255, 0.3);
+}
+
 body{
     font-family: "Futura PT Book", arial;
     font-size: 18px;
@@ -59,7 +68,7 @@ h2{
 }
 h3{
     font-size: 14px;
-    color: rgb(146, 145, 145);
+    color: var(--grey-text);
     text-transform: uppercase;
     line-height: 2;      
 }
@@ -95,7 +104,7 @@ header.header-m{
     color:#fff;
 }
 .header-m .x-sizer {
-    border-bottom: 3px solid #fd754a;
+    border-bottom: 3px solid var(--orange);
 }
 .head-logo--typed{
     font-size: 18px;
@@ -136,7 +145,7 @@ header.header-m{
     width: 16px;
     height: 16px;
     display: inline-block;
-    background-image: url(arrow.svg);
+    background-image: url(../assets/svg/arrow.svg);
     background-position: center;
     vertical-align: middle;
 }
@@ -160,7 +169,7 @@ header.header-m{
     width: 20px;
     height: 20px;
     display: inline-block;
-    background-image: url(user.svg);
+    background-image: url(../assets/svg/user.svg);
     background-position: center;
     vertical-align: middle;
 }
@@ -189,7 +198,7 @@ header.header-m{
     font-size: 14px;
     font-family: 'Futura PT';
     font-weight: 500;
-    color: rgb(146, 145, 145);
+    color: var(--grey-text);
     text-transform: uppercase;       
 }
 .footer-col--pay{
@@ -200,13 +209,13 @@ header.header-m{
     margin: 0 12px;
 }
 .footer-col--helpico{
-    background-image: url(help.svg);
+    background-image: url(../assets/svg/help.svg);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center left;
 }
 .footer-col--phoneico{
-    background-image: url(phone.svg);
+    background-image: url(../assets/svg/phone.svg);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center left;

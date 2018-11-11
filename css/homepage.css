@@ -54,15 +54,15 @@
 
 .fil.dark-theme .film-time,
 .fil.dark-theme .film-extend{
-    background-color: #4b535a;
+    background-color: var(--grey-block);
     margin-left: 5px;
-    border-color:#4b535a;
+    border-color:var(--grey-block);
 }
 .fil.dark-theme .film-time:first-child{
     margin-left: 0;
 }
 .fil.dark-theme .film-time{
-    border-top-color: rgb(251, 116, 74);
+    border-top-color: var(--orange);
 }
 
 .fil.dark-theme .film-time span,
@@ -90,7 +90,7 @@
 .calendar-day.active,
 .calendar-day:hover,
 .calendar-day:focus { 
-    background-color: rgb(251, 116, 74);
+    background-color: var(--orange);
     color: #fff!important;
 }
 .calendar-day__numb{
@@ -100,7 +100,7 @@
 }
 .calendar-day__text{
     font-size: 16px;
-    color: rgb(146, 145, 145);
+    color: var(--grey-text);
 }
 .calendar-day__month{
     font-size: 16px;   
@@ -167,7 +167,7 @@
     border-color: rgb(220, 219, 219);
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
-    border-top:3px solid rgb(252, 117, 74);   
+    border-top:3px solid var(--orange);   
     padding: 5px 10px;
     min-width: 85px;
     height: 51px;
@@ -178,7 +178,7 @@
 .film-time.active,
 .film-time:hover,
 .film-time:focus {
-    background-color: rgb(251, 116, 74);
+    background-color: var(--orange);
 }
 .film-time.active .film-time_hour,
 .film-time.active .film-time_cost,
@@ -190,14 +190,17 @@
 }
 .line{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .line-desc {
     padding-top: 35px;
 }
 .fil{
     display:flex;
-
+    flex-wrap: wrap;
+}
+.fil a {
+    margin-top: 10px;
 }
 .film-time_hour{
     font-size: 16px;
@@ -206,7 +209,7 @@
 }
 .film-time_cost{
     font-size: 13px;
-    color: rgb(146, 145, 145);      
+    color: var(--grey-text);      
 }
 .film-tags span{
     padding: 4px 12px;
@@ -214,6 +217,7 @@
     font-size: 16px;
     border: 1px solid rgb(239, 239, 239);
     color: #929191;
+    margin-top: 5px;
 }
   
 .film-extend{
@@ -227,8 +231,9 @@
     display: flex;
     flex-direction: column;
     font-size: 13px;
-    color: rgb(146, 145, 145);
+    color: var(--grey-text);
     padding-right: 20px;
+    min-width: 140px;
 }
 .film-extend span {
     margin-right: 10px;
@@ -277,7 +282,7 @@
     font-size: 16px;
 }
 .description .firstline .g1{
-   padding: 3px;
+    padding: 1px 12px;
     border-width: 1.5px;
     border-color: rgb(248, 248, 248);
     border-style: solid;
@@ -308,21 +313,45 @@
     max-width: 425px;
 }
 .description .btns{
-    padding: 10px 10px 10px 45px;
+    padding: 15px 25px 15px 45px;
     white-space: nowrap;
-    font-size: 10.643px;
+    font-size: 16px;
     color: rgb(255, 255, 255);
     background-color: transparent;
-
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(255, 255, 255, 0.3);
+    border-color: var(--light-grey);
     border-radius: 4px;
     background-color: rgba(252, 117, 74, 0);
     box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.33);
     background-image: url(../assets/img/play-circle.png);
     background-repeat: no-repeat;
     background-position: 10px;
-      
-
+}
+.slick-next, .slick-prev {
+    left: calc((100% - 1400px)/2 - 90px);
+    border: 2px solid rgb(133, 139, 145);;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+.slick-next:hover, .slick-prev:hover {
+    border-color: var(--orange);  
+} 
+.slick-next {
+    top: 73%;
+}
+.slick-next:before, .slick-prev:before {
+    opacity: 1;
+}
+.slick-next:before {
+    content: url(../assets/svg/arrow_white.svg);
+}
+.slick-prev:before {
+    content: url(../assets/svg/arrow_white.svg);
+    transform: rotate(180deg);
+}
+.slick-prev {
+    top: 80%;
 }
