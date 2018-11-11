@@ -3,6 +3,7 @@ body {
 }
 .page-index {
     background-color: rgb(25, 25, 25);
+    height: 100vh;
 }
 .description .btn-buy {
     background-color: var(--orange);
@@ -28,6 +29,41 @@ header.header-m {
 .calendar-modal {
     color: var(--grey-text)
 }
+.film-hall {
+    border: 1px solid rgb(102, 102, 102);
+    border-radius: 8px;
+}
+.film-hall__item {
+    border-radius: 8px 8px 0 0;
+    border-bottom: none;
+    background-color: rgb(22, 22, 22);
+    padding: 15px;
+    border-bottom: 1px solid rgb(102, 102, 102);
+}
+.film-hall__item:last-child {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+.film a{
+    margin-top: 0;
+}
+.film-time.disabled {
+    pointer-events: none;
+    filter: opacity(0.1);
+}
+.hall-name {
+    color: var(--white);
+    line-height: 1.5;
+    margin-right: 100px;
+    width: 120px;
+}
+.hall-format {
+    background-color: var(--orange);
+    padding: 2px 13px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
   
 
 
@@ -42,6 +78,16 @@ footer {
     background-image: url(../assets/svg/phone__grey.svg);
 }
 .footer-col__title {
-    color: rgb(68, 61, 59);
+    color: rgb(102, 102, 102);
 }
+.footer-col__content {
+    color: var(--white);
+}
+.footer-secondline {
+    border-color: rgb(102, 102, 102);
+}
+footer .x-menu-item span {
+    color: rgb(102, 102, 102);
+}
+
   

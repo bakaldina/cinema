@@ -208,6 +208,7 @@
 .film-time:hover,
 .film-time:focus {
     background-color: var(--orange);
+    border-color: var(--orange);
 }
 .film-time.active .film-time_hour,
 .film-time.active .film-time_cost,
