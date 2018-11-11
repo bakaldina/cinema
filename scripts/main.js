@@ -15,4 +15,8 @@ $(document).ready(function () {
     $('.calendar-modal').click(function () {
         $('.modal').addClass('open')
     });
+    $('.modal-back').click(function () {
+        $('.modal').removeClass('open')
+    });
+
 });

@@ -16,6 +16,21 @@
     display: block;
 }
 
+.modal-back {
+    width: 50px;
+    height: 60px;
+    cursor: pointer
+}
+.modal-back:after {
+    content: '';
+    background-image: url(../assets/img/arrow-left-circle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 60px;
+    display: flex;
+}
+
 .modal-wrap {
     width: 1440px;
     height: 950px;
@@ -108,7 +123,8 @@
     width:1060px;
 }
 .modal-footer_left{
-    width:1060px;
+    width:1060px;    
+    display: flex;
     border-top:1px solid #2c2c2c;
 }
 .modal-buy{

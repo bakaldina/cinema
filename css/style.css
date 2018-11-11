@@ -246,9 +246,11 @@ header.header-m{
     margin-right: 0
 }
 
+
 span.arrow{
     margin-right: 10px;
 }
+
 span.arrow:after {
     content: '';
     display: inline-block;
