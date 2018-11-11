@@ -241,3 +241,6 @@ header.header-m{
 .footer-link a{
     margin: 15px;
 }
+.footer-col--social {
+    margin-right: 0
+}

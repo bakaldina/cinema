@@ -2,7 +2,6 @@
     left:25px;
     z-index: 1;
 }
-
 .slick-next{
     right:25px;
 }
@@ -24,6 +23,12 @@
 .headmenu-slider__item{
     height: 600px;
 }
+.headmenu-slider__item {
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
 .headmenu-slider__item .description{
     position: absolute;
     bottom: 70px;
@@ -40,6 +45,15 @@
     background-image: url(../assets/svg/arrow_grey.svg);
     background-position: center;
     vertical-align: middle;
+}
+.head-user:before{
+    content:'';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../assets/svg/user__white.svg);
+    background-position: center;
+    vertical-align: bottom;
 }
 .head-menu-back a {
     color: var(--white);

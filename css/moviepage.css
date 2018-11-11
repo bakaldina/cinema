@@ -1,0 +1,47 @@
+body {
+    background-color: rgb(25, 25, 25);
+}
+.page-index {
+    background-color: rgb(25, 25, 25);
+}
+.description .btn-buy {
+    background-color: var(--orange);
+    border: var(--orange);
+    background-image: none;
+    padding: 15px 50px 15px 50px;
+}
+.headmenu-slider {
+    height: 100vh;
+}
+.headmenu-slider__item {
+    height: 100vh;
+}
+header.header-m {
+    height: 100vh;
+}
+.calendar-day {
+    background-color: rgb(22, 22, 22);
+    border: 2px solid rgb(44, 44, 44);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    color: var(--white);
+}
+.calendar-modal {
+    color: var(--grey-text)
+}
+  
+
+
+
+footer {
+    background-color: rgb(22, 22, 22);
+}
+.footer-col--helpico {
+    background-image: url(../assets/svg/help__grey.svg);
+}
+.footer-col--phoneico {
+    background-image: url(../assets/svg/phone__grey.svg);
+}
+.footer-col__title {
+    color: rgb(68, 61, 59);
+}
+  
