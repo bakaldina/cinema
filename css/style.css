@@ -4,6 +4,7 @@
     --black:#000000;
     --grey-text:rgb(146, 145, 145);
     --grey-block:#4b535a;
+    --blue:#283c64;
     --light-grey:rgba(255, 255, 255, 0.3);
 }
 
@@ -243,4 +244,17 @@ header.header-m{
 }
 .footer-col--social {
     margin-right: 0
+}
+
+span.arrow{
+    margin-right: 10px;
+}
+span.arrow:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    border-right: 2px solid;
+    border-bottom: 3px solid;
+    transform: skew(-20deg) rotate(-60deg);
 }

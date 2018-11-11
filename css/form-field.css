@@ -1,8 +1,4 @@
 
-h2 {
-  color: white;
-}
-
 .field-group {
   position: relative;
   margin: 20px 0 10px 0;
@@ -12,18 +8,30 @@ h2 {
   top: -18px;
   left: 4px;
   font-size: 14px;
-  color: white;
 }
 .field-group .fg-field {
-  border: 1px solid #999;
-  padding: 10px;
-  border-radius: 4px;
-  font-size: 20px;
+  
+  padding: 10px 20px;
   outline: none;
+
+  font-size: 16px;
+  color: rgb(68, 61, 59);
+  line-height: 1.2;
+
+
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 219, 219);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+
+  width: 339px;
+  min-height: 52px;
 }
 .field-group .fg-label {
   position: absolute;
-  top: 10px;
+  top: 15px;
   left: 10px;
   font-size: 20px;
   pointer-events: none;

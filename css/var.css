@@ -1,0 +1,9 @@
+:root {
+    --orange:rgb(252, 117, 74);  
+    --white:#ffffff;
+    --black:#000000;
+    --blue:#283c64;
+    --grey-text:rgb(146, 145, 145);
+    --grey-block:#4b535a;
+    --light-grey:rgba(255, 255, 255, 0.3);
+}

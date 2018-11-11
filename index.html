@@ -10,12 +10,18 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" href="fonts/FuturaPT/stylesheet.css">
+
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/modal.css">
+
     <link rel="stylesheet" href="css/homepage.css">
 </head>
 
@@ -483,27 +489,76 @@
         </div>
     </footer>
 
+    <div class="modal">
+
+        <div class="modal-wrap">
+            <div class="modal-head" style="background-image: url(assets/pict/movie.jpg)">
+                <div class="modal-head_left">
+                    <div class="modal_title"></div>
+                    <div class="modal_cinema"></div>
+                </div>
+                <div class="modal-head_right">
+
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-seats">
+                    <div class="modal-seats_left">
+
+                    </div>
+                    <div class="modal-seats_right">
+                        <div class="modal-seats_content">
+                            <div class="modal-seats_title">Выбранные места</div>
+
+                            <ul class="modal-seats_list">
+                                <li class="modal-seats_item">
+                                    <span class="modal-seats_item_row"><span>7</span> ряд</span>
+                                    <span class="modal-seats_item_place"><span>9</span> место</span>
+                                    <span class="modal-seats_item_price">120р</span>
+                                    <div class="modal-seats_item_close"></div>
+                                </li>
+                                <li class="modal-seats_item">
+                                    <span class="modal-seats_item_row"><span>7</span> ряд</span>
+                                    <span class="modal-seats_item_place"><span>9</span> место</span>
+                                    <span class="modal-seats_item_price">120р</span>
+                                    <div class="modal-seats_item_close"></div>
+                                </li>
+                            </ul>
+                            <div class="modal-seats_total">
+                                <span>5 билетов</span>
+                                <span>Всего <span>600р</span></span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer_left">
+                    <div class="modal-back">
+
+                    </div>
+                    <div class="modal-status">
+                        <div class="modal-status_elem">Выбор мест</div>
+                        <div class="modal-status_elem">Оплата</div>
+                        <div class="modal-status_elem">Финиш</div>
+                    </div>
+                </div>
+                <div class="modal-footer_right">
+                    <div class="modal-buy">
+                        Перейти к данным <span class="arrow"></span> 600р
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.headmenu-slider').slick({
-                dots: true,
-            });
-
-            let currentSlide = $('.headmenu-slider').slick('slickCurrentSlide') + 1;
-            let slideCount = $(".headmenu-slider").slick("getSlick").slideCount;
-            $('.currentSlide').html(currentSlide);
-            $('.slideCount').html(slideCount);
-
-            $(".headmenu-slider").on("afterChange", function (event, slick, currentSlide, nextSlide) {
-                $(".currentSlide").text(currentSlide + 1);
-            });
-
-        });
-    </script>
+    <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>

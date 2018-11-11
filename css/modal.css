@@ -1,0 +1,120 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1010;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9);
+    transition: opacity .15s linear;
+}
+.modal.open{
+    display: block;
+}
+
+.modal-wrap {
+    width: 1440px;
+    height: 950px;
+    background-color: #161616;
+    margin: auto;
+}
+.modal-head{
+    height:150px;
+    background-size: cover;
+    background-position: center;
+}
+.modal-seats{
+    display: flex;
+    color:#fff;
+}
+.modal-seats_list {
+    padding: 0;
+}
+.modal-seats_item{
+    height: 51px;
+    border: 1px solid rgb(44, 44, 44);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.modal-seats_total{
+    border-top: 1px solid rgb(44, 44, 44);
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-seats_item_close:before{
+    content:'';
+
+}
+.modal-status {
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+.modal-status_elem {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}  
+.modal-status_elem:first-child{
+    background-color: var(--orange);
+}
+.modal-status_elem:nth-child(2){
+    background-color: var(--blue);
+}
+
+
+.modal-seats_item span {
+    display: flex;
+    flex-flow: column;
+}
+.modal-seats_item span:first-child{
+    margin-right: 45px;
+}
+
+.modal-seats_item span:nth-child(2){
+    margin-right: 80px;
+}
+.modal-seats_right{
+    padding: 30px 20px;
+}  
+
+.modal-seats_title{
+    margin-bottom: 30px
+}
+.modal-seats_right,
+.modal-seats{
+    height: 730px;
+}
+
+.modal-footer_right,
+.modal-seats_right{
+    width:380px;
+
+    border-left:1px solid #2c2c2c;
+}
+
+.modal-footer{
+    display: flex;
+}
+.modal-seats_left{
+    width:1060px;
+}
+.modal-footer_left{
+    width:1060px;
+    border-top:1px solid #2c2c2c;
+}
+.modal-buy{
+    min-height: 60px;    
+    line-height: 60px;
+    text-align: center;
+    color:#fff;
+    background-color: var(--orange);
+}
