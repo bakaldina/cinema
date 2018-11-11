@@ -1,0 +1,41 @@
+
+h2 {
+  color: white;
+}
+
+.field-group {
+  position: relative;
+  margin: 20px 0 10px 0;
+}
+.field-group input:focus + .fg-label,
+.field-group input:not(:focus):valid + .fg-label {
+  top: -18px;
+  left: 4px;
+  font-size: 14px;
+  color: white;
+}
+.field-group .fg-field {
+  border: 1px solid #999;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+  outline: none;
+}
+.field-group .fg-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  color: #222;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
