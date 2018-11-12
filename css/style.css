@@ -260,3 +260,6 @@ span.arrow:after {
     border-bottom: 3px solid;
     transform: skew(-20deg) rotate(-60deg);
 }
+.head-user a {
+    color: var(--white);
+}
