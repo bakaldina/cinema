@@ -15,7 +15,6 @@
 .modal.open{
     display: block;
 }
-
 .modal-back {
     width: 50px;
     height: 60px;
@@ -30,17 +29,76 @@
     height: 60px;
     display: flex;
 }
-
 .modal-wrap {
     width: 1440px;
-    height: 950px;
+    height: 100vh;
     background-color: #161616;
     margin: auto;
 }
 .modal-head{
-    height:150px;
+    min-height:150px;
+    padding: 20px 0 20px 50px;
     background-size: cover;
-    background-position: center;
+    background-position: 20% 20%;
+    display: flex;
+    flex-direction: row;
+}
+.modal-head_right {
+    padding-left: 35px;
+}
+.modal-head_btn {
+    background-color: rgba(35, 35, 35, 0.8);
+    border-radius: 4px;
+    opacity: 0.8;
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.4);
+    padding: 15px 45px 15px 45px;
+    position: relative;
+    color: var(--white);
+    font-size: 16px;
+    border: none;
+}
+.modal-head_btn:after {
+    content: url(../assets/svg/arrow-right_white.svg);
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    width: 24px;
+    height: 24px;
+}
+.modal-head .film.dark-theme .film-time {
+    border-top: none;
+}
+.modal-head_btn:before {
+    content: url(../assets/svg/calendar_white.svg);
+    position: absolute;
+    left: 12px;
+    top: 13px;
+}
+.modal-head_btn:hover {
+    background-color: var(--orange)
+}
+.modal_title {
+    font-size: 46px;
+    color: var(--white);
+    line-height: 1.2;
+}
+.modal_cinema {
+    font-size: 16px;
+    color: var(--white);
+    padding-top: 10px;
+}
+.modal-head_left {
+    width: 340px;
+    position: relative;
+}
+.modal-head_left:after {
+    content: '';
+    width: 2px;
+    height: 65px;
+    background-color: var(--light-grey);
+    position: absolute;
+    right: 0;
+    top: 30px;
 }
 .modal-seats{
     display: flex;
@@ -56,7 +114,7 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 .modal-seats_total{
     border-top: 1px solid rgb(44, 44, 44);
@@ -66,7 +124,10 @@
 }
 .modal-seats_item_close:before{
     content:'';
-
+}
+.seats-row {
+    color: var(--grey-text);
+    font-size: 13px;
 }
 .modal-status {
     display: flex;

@@ -83,6 +83,9 @@
     border-color:var(--grey-block);
     box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.4);
 }
+.film.dark-theme .film-time:hover, .film.dark-theme .film-extend:hover {
+    background-color: var(--orange)
+} 
 .film.dark-theme .film-time:first-child{
     margin-left: 0;
 }
@@ -131,7 +134,7 @@
     font-size: 16px;   
 }
 .calendar-modal__ico {
-    background-image: url(../assets/pict/calendar.png);
+    background-image: url(../assets/svg/calendar_grey.svg);
     background-repeat: no-repeat;
     background-position: left center;
     width: 26px;
@@ -334,7 +337,7 @@
     background-position: left center;
     padding-left: 50px;
 }
-.description .title{
+.title{
     font-size: 46px;
     color: var(--white);
     line-height: 1.2;
