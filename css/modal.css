@@ -278,3 +278,81 @@
     color:#fff;
     background-color: var(--orange);
 }
+
+
+.modal-enter{
+    padding: 20px 90px;
+}
+.modal-enter_box{
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(44, 44, 44);
+    background-color: rgb(22, 22, 22);
+    height: 66px;
+    padding: 10px 75px;  
+    margin-bottom: 100px;
+    background: url(../assets/img/tocket.png) 16px 20px no-repeat;
+}
+.modal-enter_box .time{
+    color: var(--orange);
+}
+
+.field-group{
+    margin-bottom: 20px;
+}
+
+
+.modal-enter_title{
+    font-size: 24px; 
+    margin-bottom: 20px;       
+}
+
+.modal-enter_subtitle{
+    font-size: 14px;      
+}
+
+.btn-signin{
+    border-radius: 4px;
+    background-color: var(--orange);
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.15);
+    width: 101px;
+    height: 49px;   
+    text-align: center; 
+    border: none;  
+    margin-right: 20px;
+}
+.btn-signup{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(44, 44, 44);
+    border-radius: 4px;
+    background-color: rgba(251, 116, 74, 0);
+    width: 192px;
+    height: 49px;     
+    font-size:14px;
+
+    color: rgb(108, 108, 108);
+    text-align: center;    
+}
+
+.separate-line{
+    padding: 20px 0;
+    color: rgb(108, 108, 108);
+}
+.separate-line hr{
+    top: -19px;
+    position: relative;
+    z-index: 0;
+}
+.separate-line_text{
+    background-color: #161616;
+    position: relative;
+    z-index: 1;
+    padding-right: 20px;
+}
+.modal-social{
+    display: flex;
+}
+.modal-social a{
+    margin-right: 20px;
+}

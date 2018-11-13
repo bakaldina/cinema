@@ -22,6 +22,8 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <link rel="stylesheet" href="css/form-field.css">
+
     <link rel="stylesheet" href="css/modal.css">
 
     <link rel="stylesheet" href="css/homepage.css">
@@ -522,7 +524,46 @@
             <div class="modal-body">
                 <div class="modal-seats">
                     <div class="modal-seats_left">
-
+                        <form class="modal-enter black-theme">
+                            <legend class="modal-enter_box">Ваши билеты зарезервированы на
+                                <span class="time">14 минут 20 секунд</span>.<br /> В течение
+                                этого времени никто не
+                                сможет их выкупить.
+                            </legend>
+                            <div class="pure-g">
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <div class="modal-enter_title">Оплата без регистрации</div>
+                                    <div class="field-group">
+                                        <input type="email" class="fg-field" required>
+                                        <span class="fg-label">Login</span>
+                                    </div>
+                                    <div class="field-group">
+                                        <input type="email" class="fg-field" required>
+                                        <span class="fg-label">Пароль</span>
+                                    </div>
+                                    <button class="btn-signin">Войти</button>
+                                    <button class="btn-signup">Зарегестрироваться</button>
+                                    <div class="separate-line">
+                                        <span class="separate-line_text">или через соц. сети</span>
+                                        <hr width=340>
+                                    </div>
+                                    <div class="modal-social">
+                                        <a href="#" class="VK"><img src="assets/img/vk.png" alt="VK"></a>
+                                        <a href="#" class="OK"><img src="assets/img/ok.png" alt="OK"></a>
+                                        <a href="#" class="FB"><img src="assets/img/fb.png" alt="FB"></a>
+                                    </div>
+                                </div>
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <div class="modal-enter_title">Оплата без регистрации</div>
+                                    <div class="modal-enter_subtitle">Чтобы пройти без очереди используйте электронный
+                                        билет, котор</div>
+                                    <div class="field-group">
+                                        <input type="email" class="fg-field" required>
+                                        <span class="fg-label">Email</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-seats_right">
                         <div class="modal-seats_content">

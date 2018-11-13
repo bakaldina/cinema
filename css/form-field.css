@@ -47,3 +47,14 @@
   align-content: stretch;
   align-items: center;
 }
+
+.black-theme .field-group .fg-field{
+  background-color: transparent;
+  border-color: rgb(44, 44, 44);
+  background-color: rgba(44, 44, 44, 0.302); 
+}
+
+.black-theme .field-group .fg-label{
+  color: rgb(108, 108, 108);
+  font-size: 16px;
+}
