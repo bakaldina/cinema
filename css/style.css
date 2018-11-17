@@ -38,11 +38,11 @@ a{
     text-align: center
 }
 .x-menu-item:hover .x-sizer{
-    visibility: visible;
+    visibility: hidden;
 }
 
 .x-menu-item:hover .x-displayer{
-    visibility: hidden;
+    border-bottom: 3px solid #b50d0c;
 }
 .x-menu-item span{
     color: rgb(68, 61, 59);
@@ -51,7 +51,6 @@ a{
 
 .x-sizer {
     visibility: hidden;
-    font-weight: 700;
     border-bottom: 3px solid #b50d0c;
 }
 

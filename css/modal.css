@@ -231,6 +231,8 @@
     margin-right: 45px;
 }
 .modal-seats_item_place {
+    width: 100px;
+    padding-right: 15px;
     margin-right: 95px;
 }
 
@@ -258,7 +260,8 @@
     background-repeat: no-repeat;
 }
 .modal-seats_item_price {
-    margin-right: 40px;
+   width:100px;
+   padding-right: 10px;
 }
 .modal-footer{
     display: flex;
@@ -355,4 +358,28 @@
 }
 .modal-social a{
     margin-right: 20px;
+}
+
+@media (max-width: 1280px) { 
+    .modal-wrap{
+        width: 1000px;
+    }
+    .modal-footer_right, 
+    .modal-seats_right{
+        width: 313px;
+    }
+    .modal-footer_left
+    .modal-seats_left{
+        width: 687px;
+    }
+    .modal-enter{
+        padding: 20px 30px 20px 55px;
+    }
+    .modal-enter .pure-u-1:first-child{
+        padding-right: 30px;
+    }
+
+    .modal-seats_item_row{}
+    .modal-seats_item_place{}
+    .modal-seats_item_price{}
 }
