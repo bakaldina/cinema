@@ -1,0 +1,6 @@
+.head-contacts .head-user, .head-contacts .header-m .x-menu-item span{
+    color: var(--black);
+}
+.user-ico {
+    stroke: var(--black);
+}

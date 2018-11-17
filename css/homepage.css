@@ -30,24 +30,6 @@
 .headmenu-desktop {
     margin-top: 25px;
 }
-.head-menu-back:after{
-    content: '';
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    background-image: url(../assets/svg/arrow_grey.svg);
-    background-position: center;
-    vertical-align: middle;
-}
-.head-user:before{
-    content:'';
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-image: url(../assets/svg/user__white.svg);
-    background-position: center;
-    vertical-align: bottom;
-}
 .head-menu-back a {
     color: var(--white);
 }
