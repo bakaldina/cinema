@@ -11,6 +11,11 @@ body {
     background-image: none;
     padding: 15px 50px 15px 50px;
 }
+.description .btn-buy:hover {
+    background-color: #dd6641;
+    background-image: none;
+    color: var(--white);
+}
 .headmenu-slider {
     height: 100vh;
 }
@@ -26,7 +31,7 @@ header.header-m {
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
     color: var(--white);
 }
-.calendar-modal {
+.open-modal {
     color: var(--grey-text)
 }
 .film-hall {
