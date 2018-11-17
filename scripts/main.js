@@ -14,23 +14,27 @@ $(document).ready(function () {
         });
     }
 
-    if ($('.modal').hasClass('open')) {
-        console.log(11);
-        $(document).mouseup(function (e) { // событие клика по веб-документу
-            var div = $(".modal"); // тут указываем ID элемента
+
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+
+        if ($('.modal').hasClass('open')) {
+            var div = $(".modal-wrap"); // тут указываем ID элемента
+
             if (!div.is(e.target) // если клик был не по нашему блоку
                 && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                div.hide(); // скрываем его
+                    $('.modal').removeClass('open'); // скрываем его
             }
-        });
-    }
+        }
+    });
 
+//    head-user .modal-seats_content 
+    $('.modal-enter').hide();
 
     $('.open-modal').click(function () {
         $('.modal').addClass('open')
     });
     $('.modal-back').click(function () {
-        $('.modal').removeClass('open')
+        $('.modal-enter').show()
     });
 
     feather.replace();
