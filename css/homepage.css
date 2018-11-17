@@ -136,7 +136,7 @@
     background-size: contain;
     margin-bottom: 5px;
 }
-.calendar-modal {
+.open-modal {
     border: none;
     text-align: left;
 }
@@ -376,6 +376,10 @@
 .slick-next:hover, .slick-prev:hover {
     border-color: var(--orange);  
 } 
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    content: url(../assets/svg/arrow_orange.svg);
+}
 .slick-next {
     top: 64%;
 }
