@@ -132,7 +132,7 @@ header.header-m{
     justify-content: space-between;
 }
 .container{
-    max-width: 1450px; /* 1450 */
+    max-width: 1000px;
     margin: auto;
     height: 100%;
     position: relative;
@@ -199,7 +199,9 @@ header.header-m{
     height: 690px;
 }
 
-
+.footer-logo {
+    margin-right: 25px;
+}
 .footer-col{
     margin: 0 25px;
     padding-left: 35px;
@@ -215,17 +217,24 @@ header.header-m{
     display: flex;
     align-items: center;
 }
+.footer-col--pay img {
+    width: 47px;
+    margin-right: 10px;
+}
+.footer-col--social {
+    float: right
+}
 .footer-col--social a{
     margin: 0 12px;
 }
 .footer-col--helpico{
-    background-image: url(../assets/svg/help.svg);
+    background-image: url(../assets/svg/help_grey.svg);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center left;
 }
 .footer-col--phoneico{
-    background-image: url(../assets/svg/phone.svg);
+    background-image: url(../assets/svg/phone_grey.svg);
     background-repeat: no-repeat;
     background-size: 25px;
     background-position: center left;
@@ -244,11 +253,17 @@ header.header-m{
 }
 
 .footer-secondline{
-    padding: 25px;
+    padding: 25px 0;
     border-top:1px solid #e2e2e2;
 }
-.footer-link a{
+.footer-link a {
     margin: 15px;
+}
+.footer-link a:first-child {
+    margin-left: 0;
+}
+.footer-link a:last-child {
+    margin-right: 0;
 }
 .footer-col--social {
     margin-right: 0

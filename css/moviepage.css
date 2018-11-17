@@ -71,17 +71,12 @@ header.header-m {
 footer {
     background-color: rgb(22, 22, 22);
 }
-.footer-col--helpico {
-    background-image: url(../assets/svg/help__grey.svg);
-}
-.footer-col--phoneico {
-    background-image: url(../assets/svg/phone__grey.svg);
-}
 .footer-col__title {
     color: rgb(102, 102, 102);
 }
 .footer-col__content {
     color: var(--white);
+    font-family: "Futura PT Book", arial;
 }
 .footer-secondline {
     border-color: rgb(102, 102, 102);
