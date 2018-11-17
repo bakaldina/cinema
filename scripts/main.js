@@ -18,27 +18,31 @@ $(document).ready(function () {
     }
 
 
-    $(document).mouseup(function (e) { // событие клика по веб-документу
+    $(document).mouseup(function (e) {
 
         if ($('.modal').hasClass('open')) {
-            var div = $(".modal-wrap"); // тут указываем ID элемента
+            var div = $(".modal-wrap");
 
-            if (!div.is(e.target) // если клик был не по нашему блоку
-                && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                    $('.modal').removeClass('open'); // скрываем его
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $('.modal').removeClass('open');
             }
         }
     });
 
-//    head-user .modal-seats_content 
+    //    head-user .modal-seats_content 
     $('.modal-enter').hide();
 
     $('.open-modal').click(function () {
         $('.modal').addClass('open')
     });
+    $('.modal-close').click(function () {
+        $('.modal').removeClass('open')
+    });
     $('.modal-back').click(function () {
         $('.modal-enter').show()
     });
+
 
     feather.replace();
 

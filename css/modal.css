@@ -27,6 +27,22 @@
     min-height: 100vh;
     background-color: #161616;
     margin: auto;
+    position: relative;
+}
+.modal-close svg {
+    position: absolute;
+    right: -45px;
+    top: 0;
+    width: 34px;
+    height: 34px;
+    cursor: pointer;
+    stroke: #fff;
+}
+.modal-close svg:hover {
+    stroke: var(--orange)
+}
+.modal-close:hover {
+
 }
 .modal-head{
     min-height:150px;
@@ -347,7 +363,9 @@
 .modal-social a{
     margin-right: 20px;
 }
-
+.modal-enter .pure-u-1:first-child {
+    padding-right: 30px;
+}
 @media (max-width: 1280px) { 
     .modal-wrap{
         width: 1000px;
