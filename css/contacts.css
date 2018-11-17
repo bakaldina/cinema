@@ -1,0 +1,47 @@
+.head-contacts .head-user, .head-contacts .header-m .x-menu-item span{
+    color: var(--black);
+}
+.user-ico {
+    stroke: var(--black);
+}
+.head-contacts .head-menu-back {
+    border-left: 1px solid #4844444d;
+}
+.head-contacts .head-menu-back a {
+    color: var(--black);
+}
+.head-contacts .head-arrow-right {
+    stroke: #4844444d;
+}
+.head-contacts .head-arrow-right:hover {
+    stroke: var(--orange);
+}
+.block-phone {
+    margin-top: 60px;
+}
+.block-phone a {
+    color: var(--black);
+}
+.address {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 0;
+}
+.director {
+    font-size: 24px;
+    font-weight: 500;
+}
+.director_name {
+    font-size: 15px;
+    color: var(--grey-text);
+    margin-top: 30px;
+    margin-bottom: 10px
+}
+h3 {
+    font-weight: 500;
+}
+.phone {
+    margin-bottom: 20px
+}
+
+  

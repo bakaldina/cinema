@@ -33,7 +33,7 @@ a{
 }
 
 .x-menu-item:hover .x-displayer{
-    border-bottom: 3px solid #b50d0c;
+    border-bottom: 3px solid var(--orange);
 }
 .x-menu-item span{
     color: rgb(68, 61, 59);
@@ -102,6 +102,9 @@ header.header-m{
 .header-m .x-menu-item span{
     color:var(--white);
 }
+.head-user:hover {
+    border-bottom: 3px solid var(--orange);
+}
 .header-m .x-sizer {
     border-bottom: 3px solid var(--orange);
 }
@@ -135,21 +138,9 @@ header.header-m{
     height: 40px;
     line-height: 40px;
 }
-
 .head-menu-back a{
     color: #dadada;
 }
-
-.head-menu-back:after{
-    content: '';
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    background-image: url(../assets/svg/arrow.svg);
-    background-position: center;
-    vertical-align: middle;
-}
-
 .head-menu--left,
 .head-menu--right{
     display: flex;
@@ -163,18 +154,6 @@ header.header-m{
 .head-user{
     margin-left: 45px;
 }
-
-.head-user:before{
-    content:'';
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-    background-image: url(../assets/svg/user.svg);
-    background-position: center;
-    vertical-align: middle;
-}
-
-
 .pcontacts{
     padding: 50px 0;
     background-color: #f8f8f8;
@@ -273,12 +252,12 @@ span.arrow:after {
     border-bottom: 3px solid;
     transform: skew(-20deg) rotate(-60deg);
 }
-.head-user a {
-    color: var(--white);
-}
+
 
 /* icons */
-
+svg {
+    vertical-align: middle;
+}
 .x-circle {
     stroke: var(--grey);
 }
@@ -290,5 +269,16 @@ span.arrow:after {
     vertical-align: middle;
 }
 .modal-arrow-left-circle:hover {
+    stroke: var(--orange);
+}
+.head-arrow-right {
+    stroke: var(--grey);
+    width: 20px;
+}
+/* .head-menu-back a:hover  .head-arrow-right {
+    border-bottom: 3px solid var(--orange);
+    stroke: var(--orange);
+} */
+.head-arrow-right:hover {
     stroke: var(--orange);
 }

@@ -3,6 +3,9 @@ $(document).ready(function () {
     if ($('.slider-init').length > 0) {
         $('.slider-init').slick({
             dots: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            pauseOnHover: true
         });
         let currentSlide = $('.slider-init').slick('slickCurrentSlide') + 1;
         let slideCount = $(".slider-init").slick("getSlick").slideCount;
