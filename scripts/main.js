@@ -33,6 +33,13 @@ $(document).ready(function () {
     //    head-user .modal-seats_content 
     $('.modal-enter').hide();
 
+    $('.modal-buy').click(function(){
+        $('.modal-enter').show();
+        $('.modal-status_elem.pay').addClass('active');
+    });
+
+   
+
     $('.open-modal').click(function () {
         $('.modal').addClass('open')
     });
