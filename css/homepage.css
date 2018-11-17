@@ -362,7 +362,7 @@
     border: 2px solid var(--light-grey);
     border-radius: 4px;
     box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.33);
-    background-image: url(../assets/img/play-circle.png);
+    background-image: url(../assets/svg/play-circle.svg);
     background-repeat: no-repeat;
     background-position: 10px;
     margin-right: 10px;
@@ -370,6 +370,7 @@
 .description .btns:hover {
     border-color: var(--orange);
     color: var(--orange);
+    background-image: url(../assets/svg/play-circle_orange.svg);
 }
 .slick-next, .slick-prev {
     left: calc((100% - 1400px)/2 - 90px);
