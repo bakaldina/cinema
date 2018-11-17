@@ -8,7 +8,10 @@
     text-align: center;
     margin-bottom: 60px;
 }
-
+h1 {
+    font-size: 32px;
+    padding-top: 30px;
+}
 .office-navigation .office-navigation_link{
     font-size: 16px;
     color: rgb(68, 61, 59);
@@ -24,18 +27,32 @@
     border-bottom: 3px solid  var(--orange);
     box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
 }
+.tickets {
+    display: flex;
+    margin-bottom: 20px;
+}
 .tickets_item{
-    width: 477px;
-    height: 208px;
+    min-width: 485px;
+    height: 190px;
     border-radius: 8px; 
     background-position: center;
-    background-size: contain;     
-
+    background-size: cover;     
     color: rgb(255, 255, 255);
     position: relative;
-    padding: 120px 0 0 30px;
+    padding: 110px 0 0 30px;
+    margin-right: 30px;
 }
-
+.ticket_info svg {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+.ticket_info img {
+    width: 20px;
+    margin-right: 5px;
+}
+.ticket_info span {
+    margin-right: 50px;
+}
 .tickets_item:after {
     content: '';
     display: inline-block;
@@ -68,4 +85,7 @@
 
 .ticket_info{
     font-size: 16px;      
+}
+.setting {
+    background-color: rgb(248, 248, 248);
 }

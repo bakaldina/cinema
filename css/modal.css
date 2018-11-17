@@ -301,7 +301,7 @@
     height: 66px;
     padding: 10px 75px;  
     margin-bottom: 100px;
-    background: url(../assets/img/tocket.png) 16px 20px no-repeat;
+    background: url(../assets/img/ticket.png) 16px 20px no-repeat;
 }
 .modal-enter_box .time{
     color: var(--orange);

@@ -5,37 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
+    <title>Мои билеты</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/css/inputmask.min.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
     <link rel="stylesheet" href="css/var.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/FuturaPT/stylesheet.css">
     <link rel="stylesheet" href="css/form-field.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/office.css">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link rel="stylesheet" href="css/modal.css">
 </head>
 
 <body>
-    <header>
+    <header class="head-contacts">
         <div class="container">
             <div class="pure-g">
                 <div class="pure-u-1">
                     <div class="headmenu-desktop">
                         <div class="head-menu--left">
                             <div class="head-logo">
-                                <img src="assets/svg/logo.svg" width='178' alt="Логотип">
+                                <a href="index.html">
+                                    <img src="assets/svg/logo.svg" width='178' alt="Логотип">
+                                </a>
                             </div>
                             <div class="head-menu-back">
-                                <a href="https://kinoneva.ru">Перейти в Неву</a>
+                                <a href="https://kinoneva.ru">Перейти в Неву <i data-feather="arrow-right" class="head-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="head-menu--right">
                             <nav class="head-menu">
-                                <a href="#" class="x-menu-item">
+                                <a href="index.html" class="x-menu-item">
                                     <span class="x-displayer">Афиша</span>
                                     <span class="x-sizer">Афиша</span>
                                 </a>
@@ -43,7 +52,7 @@
                                     <span class="x-displayer">Кинотеатр</span>
                                     <span class="x-sizer">Кинотеатр</span>
                                 </a>
-                                <a href="#" class="x-menu-item">
+                                <a href="contacts.html" class="x-menu-item">
                                     <span class="x-displayer">Контакты</span>
                                     <span class="x-sizer">Контакты</span>
                                 </a>
@@ -64,14 +73,101 @@
             <div class="office-navigation">
                 <a href="#" class="office-navigation_link active">Мои билеты</a>
                 <a href="#" class="office-navigation_link">Поддержка</a>
-                <a href="#" class="office-navigation_link">Профиль</a>
+                <a href="office.html" class="office-navigation_link">Профиль</a>
             </div>
             <div class="tickets">
                 <div class="tickets_item" style="background-image: url(assets/pict/movie.jpg)">
                     <div class="ticket_title">Venom</div>
                     <div class="ticket_info">
+                        <span><i data-feather="calendar" width="15"></i>
+                            29.10 в 19:40</span>
+                        <span><img src="assets/img/ticket_white.png" alt="Билет"> 2 билета</span>
+                    </div>
+                </div>
+                <div class="tickets_item" style="background-image: url(assets/pict/agent.jpg)">
+                    <div class="ticket_title">Непрощенный</div>
+                    <div class="ticket_info">
                         <span>29.10 в 19:40</span>
                         <span>2 билета</span>
+                    </div>
+                </div>
+            </div>
+            <div class="recommendation-films">
+                <h1>Интересные фильмы</h1>
+                <div class="film-list">
+                    <div class="pure-g">
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <div class="film-list__item" style="background-image: url(assets/pict/film.jpg)">
+                                <a href="movie.html">
+                                    <div class="line">
+                                        <div class="film-poster">
+                                        </div>
+                                        <div class="line-desc">
+                                            <div class="film-title">
+                                                Хищник
+                                            </div>
+                                            <div class="film-tags">
+                                                <span>приключения</span>
+                                                <span>фэнтези</span>
+                                                <span>экшн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="film">
+                                    <div class="film-time open-modal">
+                                        <span class="film-time_hour">17:40</span>
+                                        <span class="film-time_cost">100p</span>
+                                    </div>
+                                    <div class="film-time open-modal">
+                                        <span class="film-time_hour">17:40</span>
+                                        <span class="film-time_cost">100p</span>
+                                    </div>
+                                    <div class="film-time open-modal">
+                                        <span class="film-time_hour">17:40</span>
+                                        <span class="film-time_cost">100p</span>
+                                    </div>
+                                    <a href="movie.html" class="film-extend">
+                                        <span>+8 сеансов</span>
+                                        <span>на другое время</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pure-u-1 pure-u-md-1-2">
+                            <div class="film-list__item" style="background-image: url(assets/pict/film.jpg)">
+                                <a href="movie.html">
+                                    <div class="line">
+                                        <div class="film-poster">
+                                        </div>
+                                        <div class="line-desc">
+                                            <div class="film-title">
+                                                Хищник
+                                            </div>
+                                            <div class="film-tags">
+                                                <span>приключения</span>
+                                                <span>фэнтези</span>
+                                                <span>экшн</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="film">
+                                    <div href="movie.html" class="film-time open-modal">
+                                        <span class="film-time_hour">17:40</span>
+                                        <span class="film-time_cost">100p</span>
+                                    </div>
+                                    <div href="movie.html" class="film-time open-modal active">
+                                        <span class="film-time_hour">17:40</span>
+                                        <span class="film-time_cost">100p</span>
+                                    </div>
+                                    <a href="https://kinoneva.ru " class="film-extend film-extend-neva">
+                                        <span>+3 сеанса в Неве</span>
+                                        <span>на другое время</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -138,17 +234,160 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-head" style="background-image: url(assets/pict/agent.jpg)">
+                <div class="modal-head_left">
+                    <div class="modal_title">Непрощенный</div>
+                    <div class="modal_cinema">Кинотеатр Художественный <br> <span>Зал премьер</span></div>
+                </div>
+                <div class="modal-head_right">
+                    <button class="modal-head_btn">10 октября</button>
+                    <nav class="seans-list">
+                        <div class="film dark-theme">
+                            <a href="#" class="film-time">
+                                <span class="film-time_hour">17:40</span>
+                                <span class="film-time_cost">100p</span>
+                            </a>
+                            <a href="#" class="film-time">
+                                <span class="film-time_hour">17:40</span>
+                                <span class="film-time_cost">100p</span>
+                            </a>
+                            <a href="#" class="film-time">
+                                <span class="film-time_hour">17:40</span>
+                                <span class="film-time_cost">100p</span>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-seats">
+                    <div class="modal-seats_left">
+                        <div class="modal-seats_content" id="modal-step1 ">
 
+                        </div>
+                        <form class="modal-enter black-theme">
+                            <legend class="modal-enter_box">Ваши билеты зарезервированы на
+                                <span class="time">14 минут 20 секунд</span>.<br /> В течение
+                                этого времени никто не сможет их выкупить.
+                            </legend>
+                            <div class="pure-g">
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <div class="modal-enter_title">Вход в личный кабинет</div>
+                                    <div class="field-group">
+                                        <input type="email" class="fg-field" required>
+                                        <span class="fg-label">Login</span>
+                                    </div>
+                                    <div class="field-group">
+                                        <input type="email" class="fg-field" required>
+                                        <span class="fg-label">Пароль</span>
+                                    </div>
+                                    <button class="btn-signin">Войти</button>
+                                    <button class="btn-signup">Зарегистрироваться</button>
+                                    <div class="separate-line">
+                                        <span class="separate-line_text">или через соц. сети</span>
+                                        <hr color="#2c2c2c">
+                                    </div>
+                                    <div class="modal-social">
+                                        <a href="#" class="VK"><img src="assets/img/vk.png" alt="VK"></a>
+                                        <a href="#" class="OK"><img src="assets/img/ok.png" alt="OK"></a>
+                                        <a href="#" class="FB"><img src="assets/img/fb.png" alt="FB"></a>
+                                    </div>
+                                </div>
+                                <div class="pure-u-1 pure-u-md-1-2">
+                                    <div class="modal-enter_title">Оплата без регистрации</div>
+                                    <div class="modal-enter_subtitle">Чтобы пройти без очереди используйте электронный
+                                        билет, котор</div>
+                                    <div class="field-group">
+                                        <input type="email" class="fg-field" required>
+                                        <span class="fg-label">Email</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-seats_right">
+                        <div class="modal-seats_content">
+                            <div class="modal-seats_title">Выбранные места</div>
+                            <ul class="modal-seats_list">
+                                <li class="modal-seats_item">
+                                    <span class="modal-seats_item_row"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">ряд</span></span>
+                                    <span class="modal-seats_item_place"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">место</span></span>
+                                    <span class="modal-seats_item_price">120<img class="rub" src="assets/svg/rub_white.svg"
+                                            alt="Р"></span>
+                                    <div class="modal-seats_item_close"><i data-feather="x-circle" class="x-circle"></i></div>
+                                </li>
+                                <li class="modal-seats_item">
+                                    <span class="modal-seats_item_row"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">ряд</span></span>
+                                    <span class="modal-seats_item_place"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">место</span></span>
+                                    <span class="modal-seats_item_price">120<img class="rub" src="assets/svg/rub_white.svg"
+                                            alt="Р"></span>
+                                    <div class="modal-seats_item_close"><i data-feather="x-circle" class="x-circle"></i></div>
+                                </li>
+                                <li class="modal-seats_item">
+                                    <span class="modal-seats_item_row"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">ряд</span></span>
+                                    <span class="modal-seats_item_place"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">место</span></span>
+                                    <span class="modal-seats_item_price">120<img class="rub" src="assets/svg/rub_white.svg"
+                                            alt="Р"></span>
+                                    <div class="modal-seats_item_close"><i data-feather="x-circle" class="x-circle"></i></div>
+                                </li>
+                                <li class="modal-seats_item">
+                                    <span class="modal-seats_item_row"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">ряд</span></span>
+                                    <span class="modal-seats_item_place"><span class="seats-row-number">7</span> <span
+                                            class="seats-row">место</span></span>
+                                    <span class="modal-seats_item_price">120<img class="rub" src="assets/svg/rub_white.svg"
+                                            alt="Р"></span>
+                                    <div class="modal-seats_item_close"><i data-feather="x-circle" class="x-circle"></i></div>
+                                </li>
+                            </ul>
+                            <div class="modal-seats_total">
+                                <span>5 билетов</span>
+                                <span><span class="grey">Всего:</span> <span class="sum">600<img class="rub" src="assets/svg/rub_white.svg"
+                                            alt="Р"></span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="modal-footer_left">
+                    <div class="modal-back">
+                        <i data-feather="arrow-left-circle" class="modal-arrow-left-circle"></i>
+                    </div>
+                    <div class="modal-status">
+                        <div class="modal-status_elem place active">Выбор мест</div>
+                        <div class="modal-status_elem pay">Оплата</div>
+                        <div class="modal-status_elem">Финиш</div>
+                    </div>
+                </div>
+                <div class="modal-footer_right">
+                    <div class="modal-buy">
+                        Перейти к данным <i class="modal__chevron-right" data-feather="chevron-right"></i>600<img class="rub"
+                            src="assets/svg/rub_white.svg" alt="Р"> </div>
+                </div>
+            </div>
+            <div class="modal-close"><i data-feather="x-circle" stroke-width="1"></i></div>
+        </div>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 
     <script>
         $(document).ready(function () {
             $('.person-birthday').mask("99.99.9999");  //static mask
-            //       $(selector).inputmask({ "mask": "(999) 999-9999" }); //specifying options
-            //       $(selector).inputmask("9-a{1,3}9{1,3}"); //mask with dynamic syntax
         });
     </script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/feather-icons"></script>
 
     <script type="text/javascript" src="scripts/main.js"></script>
