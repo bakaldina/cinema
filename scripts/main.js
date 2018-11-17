@@ -33,6 +33,6 @@ $(document).ready(function () {
         $('.modal').removeClass('open')
     });
 
-
+    feather.replace();
 
 });

@@ -6,6 +6,7 @@
     --grey-block:#4b535a;
     --blue:#283c64;
     --light-grey:rgba(255, 255, 255, 0.3);
+    --grey: rgba(255, 255, 255, 0.5);
 }
 
 body{
@@ -21,16 +22,6 @@ body{
 }
 a{
     text-decoration: none;
-}
-.material-icons.grey{ color: rgba(255,255,255,0.5) }
-.material-icons.white{ color: #fff; }
-.material-icons.black { color: #000 }
-.material-icons.dark-grey { color: rgba(0, 0, 0, 0.5) }
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-28 { font-size: 28px; }
-.material-icons {
-    vertical-align: middle;
 }
 
 .x-menu-item {
@@ -285,4 +276,20 @@ span.arrow:after {
 }
 .head-user a {
     color: var(--white);
+}
+
+/* icons */
+
+.x-circle {
+    stroke: var(--grey);
+}
+.x-circle:hover {
+    stroke: var(--orange);
+}
+.modal__chevron-right {
+    stroke: var(--grey-block);
+    vertical-align: middle;
+}
+.modal-arrow-left-circle:hover {
+    stroke: var(--orange);
 }
