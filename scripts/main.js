@@ -19,13 +19,21 @@ $(document).ready(function () {
 
 
     $(document).mouseup(function (e) { // событие клика по веб-документу
-
         if ($('.modal').hasClass('open')) {
             var div = $(".modal-wrap"); // тут указываем ID элемента
-
             if (!div.is(e.target) // если клик был не по нашему блоку
                 && div.has(e.target).length === 0) { // и не по его дочерним элементам
                     $('.modal').removeClass('open'); // скрываем его
+            }
+        }
+    });
+
+    $(document).mouseup(function (e) { // событие клика по веб-документу
+        if ($('.modal-mini').hasClass('open')) {
+            var div = $(".modal-mini_wrap"); // тут указываем ID элемента
+            if (!div.is(e.target) // если клик был не по нашему блоку
+                && div.has(e.target).length === 0) { // и не по его дочерним элементам
+                    $('.modal-mini').removeClass('open'); // скрываем его
             }
         }
     });
@@ -38,6 +46,9 @@ $(document).ready(function () {
         $('.modal-status_elem.pay').addClass('active');
     });
 
+    $('.head-user').click(function () {
+        $('.modal-mini').addClass('open')
+    });
    
 
     $('.open-modal').click(function () {
