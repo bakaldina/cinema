@@ -273,6 +273,7 @@ svg {
 }
 .head-arrow-right {
     stroke: var(--grey);
+    width: 20px;
 }
 /* .head-menu-back a:hover  .head-arrow-right {
     border-bottom: 3px solid var(--orange);
