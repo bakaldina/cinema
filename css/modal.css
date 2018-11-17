@@ -283,6 +283,10 @@
     text-align: center;
     color:#fff;
     background-color: var(--orange);
+    cursor: pointer;
+}
+.modal-buy:hover {
+    background-color:#dd6641;
 }
 
 
@@ -327,6 +331,9 @@
     border: none;  
     margin-right: 20px;
 }
+.btn-signin:hover {
+    background-color:#dd6641;
+}
 .btn-signup{
     border-style: solid;
     border-width: 2px;
@@ -336,11 +343,13 @@
     width: 192px;
     height: 49px;     
     font-size:14px;
-
     color: rgb(108, 108, 108);
     text-align: center;    
 }
-
+.btn-signup:hover {
+    border-color: var(--orange);
+    color: var(--orange);
+}
 .separate-line{
     padding: 20px 0;
     color: rgb(108, 108, 108);
