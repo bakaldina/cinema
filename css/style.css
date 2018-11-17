@@ -103,7 +103,7 @@ header.header-m{
     color:var(--white);
 }
 .head-user:hover {
-    border-bottom: 3px solid var(--orange);
+    cursor:pointer
 }
 .header-m .x-sizer {
     border-bottom: 3px solid var(--orange);
