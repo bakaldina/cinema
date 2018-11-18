@@ -434,3 +434,16 @@
         right: 92px;
     }
 }
+
+@media (max-width: 355px) { 
+    .description .firstline .genre,
+    .description .firstline .limit,
+    .description .firstline .rating,
+    .description .firstline .rating-im {
+        margin-right: 5px;
+}
+    .film.dark-theme .film-time, .film.dark-theme .film-extend  {
+        margin-right: 0;
+        margin-left: 2px;
+    }
+}
