@@ -324,5 +324,10 @@ svg {
     .footer-link a{
         margin:0 10px 10px 0;
     }
-
+    .head-user{
+        margin-left: 0;
+    }
+    .head-logo--typed {
+    margin: auto
+}
 }
