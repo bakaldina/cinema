@@ -403,10 +403,19 @@
     .film-poster {
         display:none;
     }
-
+    .film-time,
+    .seans .film-extend {
+        min-width: 29%;
+    }
+    .film-time:last-child {
+        margin-right: 15px;
+    }
+    .film.dark-theme  .film-extend {
+        margin-left: 0;
+    }
     .headmenu-slider__item .description{
         padding: 0 30px;
-        bottom: 210px;
+        bottom: 180px;
     }
     .seans{
         width: 100%;
@@ -416,7 +425,7 @@
     .headmenu-slider_counter{
         right: 50%;
         top: auto;
-        bottom: 50px;
+        bottom: 64px;
         left: 50%;
         transform: rotate(0);
         width: 100px;
@@ -424,18 +433,56 @@
     .slick-next,    
     .slick-prev{
         top: auto;
-        bottom: 50px;
+        bottom: 45px;
         left: auto;
+        width: 40px;
+        height: 40px;
     }
     .slick-next{
         right: 30px;
     }
     .slick-prev{
         right: 92px;
+        bottom: 64px;
+    }
+    .calendar-day__numb {
+        font-size: 26px;
+    }
+    .calendar-week {
+        margin-bottom: 20px;
+    }
+    .page-index {
+        padding-top: 20px
+    }
+    .film-list {
+        padding: 0 20px;
+    }
+    .film-any {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .film-any div {
+        margin-bottom: 0
+    }
+    .film-any .film-extend {
+        min-width: 182px;
+    }
+    .film-tags {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+    .film-tags span {
+        margin-right: 5px;
     }
 }
-
-@media (max-width: 355px) { 
+@media (max-width: 924px) { 
+    .calendar-day__numb {
+        font-size: 26px;
+    }
+}
+@media (max-width: 370px) { 
     .description .firstline .genre,
     .description .firstline .limit,
     .description .firstline .rating,
@@ -443,7 +490,14 @@
         margin-right: 5px;
 }
     .film.dark-theme .film-time, .film.dark-theme .film-extend  {
-        margin-right: 0;
+        margin-right: 5px;
         margin-left: 2px;
+    }
+    .headmenu-slider_counter {
+        left: 42%;
+    }
+    .film-tags span {
+        padding: 4px 6px;
+        margin-right: 5px;
     }
 }
