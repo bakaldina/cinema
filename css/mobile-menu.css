@@ -108,7 +108,7 @@ nav ul {
   transform: translateX(0);
 }
 
-nav a {
+.header-mobile  nav a {
   display: block;
   width: 200px;
 
@@ -141,4 +141,10 @@ nav a {
 .header-mobile nav ul li{
 
     margin-bottom:40px;
+}
+
+@media (max-width: 768px) { 
+    body{
+        padding-top: 70px;
+    }
 }
