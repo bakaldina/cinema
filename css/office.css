@@ -6,6 +6,7 @@
 
     display: flex;
     text-align: center;
+    justify-content: space-between;
     margin-bottom: 60px;
 }
 h1 {
@@ -41,9 +42,6 @@ h1 {
     padding: 110px 0 0 30px;
     margin-bottom: 30px;
     overflow: hidden;
-}
-.tickets .pure-u-1:nth-child(2n) .tickets_item {
-    margin: 0 0 0 auto;
 }
 .ticket_info svg {
     vertical-align: text-bottom;
@@ -94,4 +92,26 @@ h1 {
 }
 .profile-menu-icon {
 
+}
+.office-navigation_link.active svg g path,
+.office-navigation_link:hover svg g path {
+    fill: var(--orange);
+}
+.office-navigation_link.active svg
+.office-navigation_link:hover svg{
+    stroke: var(--orange);
+}
+.office-navigation_list{
+    display: flex;
+}
+
+
+.outofoffice{
+    border:none;
+    background: transparent;
+}
+
+
+.tickets .pure-u-1:nth-child(2n) .tickets_item {
+    margin: 0 0 0 auto;
 }
