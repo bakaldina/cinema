@@ -454,6 +454,7 @@
     }
     .calendar-week {
         margin-bottom: 20px;
+        justify-content: flex-start;
     }
     .page-index {
         padding-top: 20px

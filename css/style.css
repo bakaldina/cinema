@@ -15,6 +15,9 @@ body{
     line-height: 1.2;
     color: #443d3b;
 }
+.pure-g{
+    font-family: "Futura PT Book", arial;
+}
 *,
 *:before,
 *:after{

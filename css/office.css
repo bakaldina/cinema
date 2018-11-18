@@ -232,6 +232,33 @@ form {
     .footer-logo{
         margin: auto;
     }
+    .form-title{
+        position: relative;
+    }
+    .form-title span.tooltip{
+        position: static;
+        font-size: 0;
+        margin-left: 0;
+        vertical-align: top;
+    }
+    .tooltip:hover .tooltiptext{
+        font-size: 16px;
+        right: 0;
+        left: auto;
+        width: calc(100vw - 60px);
+        margin: 0;
+        top: 100%;
+        padding: 10px;
+        height: auto;
+    }
+    .tooltip .tooltiptext::before, 
+    .tooltip .tooltiptext::after{
+        right: 20px;
+        left: auto;
+    }
+    .tooltip .tooltiptext::after{
+        left: auto;
+    }
 }
 
 @media (min-width: 768px) { 
