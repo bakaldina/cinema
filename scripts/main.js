@@ -38,8 +38,7 @@ $(document).ready(function () {
         }
     });
 
-//    head-user .modal-seats_content 
-    //    head-user .modal-seats_content 
+// Модалки   
     $('.modal-enter').hide();
 
     $('.modal-buy').click(function(){
@@ -57,6 +56,10 @@ $(document).ready(function () {
     });
     $('.modal-close').click(function () {
         $('.modal').removeClass('open')
+    });
+
+    $('.modal-mini_close').click(function () {
+        $('.modal-mini').removeClass('open')
     });
     $('.modal-back').click(function () {
         $('.modal-enter').show()

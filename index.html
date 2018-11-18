@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="css/form-field.css">
 
     <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/modal-mini.css">
 
     <link rel="stylesheet" href="css/homepage.css">
 </head>
@@ -565,14 +564,14 @@
         <div class="modal-mini_wrap">
             <div class="modal-mini_body">
                 <div class="modal-enter_title">Вход в личный кабинет</div>
-                <div class="field-group">
+                <label class="field-group">
                     <input type="email" class="fg-field" required>
                     <span class="fg-label">Login</span>
-                </div>
-                <div class="field-group">
+                </label>
+                <label class="field-group">
                     <input type="email" class="fg-field" required>
                     <span class="fg-label">Пароль</span>
-                </div>
+                </label>
                 <button class="btn-signin">Войти</button>
                 <button class="btn-signup">Зарегистрироваться</button>
                 <div class="separate-line">
@@ -585,8 +584,9 @@
                     <a href="#" class="FB"><img src="assets/img/fb.png" alt="FB"></a>
                 </div>
             </div>
-            <div class="modal-mini_close"></div>
+            <div class="modal-close modal-mini_close"><i data-feather="x-circle" stroke-width="1"></i></div>
         </div>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>

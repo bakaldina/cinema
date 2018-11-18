@@ -2,6 +2,18 @@
 .field-group {
   position: relative;
   margin: 20px 0 10px 0;
+
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(220, 219, 219);
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+
+  width: 100%;
+  min-height: 52px;
+  display: block;
+
 }
 .field-group input:focus + .fg-label,
 .field-group input:not(:focus):valid + .fg-label {
@@ -11,26 +23,21 @@
 }
 .field-group .fg-field {
   
-  padding: 10px 20px;
   outline: none;
 
   font-size: 16px;
   color: rgb(68, 61, 59);
-  line-height: 1.2;
 
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(220, 219, 219);
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+  position: relative;
+  top: 14px;
 
-  width: 100%;
-  min-height: 52px;
 }
 .field-group .fg-label {
   position: absolute;
   top: 15px;
-  left: 10px;
+  left: 20px;
   font-size: 20px;
   pointer-events: none;
   transition: 0.3s ease all;
@@ -46,10 +53,14 @@
   align-items: center;
 }
 
-.black-theme .field-group .fg-field{
+.black-theme .field-group{
   background-color: transparent;
   border-color: rgb(44, 44, 44);
   background-color: rgba(44, 44, 44, 0.302); 
+}
+
+.black-theme .field-group .fg-field{
+  color:#fff;
 }
 
 .black-theme .field-group .fg-label{

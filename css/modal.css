@@ -351,7 +351,7 @@
     color: var(--orange);
 }
 .separate-line{
-    padding: 20px 0;
+    padding: 40px 0 0;
     color: rgb(108, 108, 108);
     font-size: 16px;
 }
@@ -400,4 +400,46 @@
     .btn-signup{
         width:171px;
     }
+}
+
+
+/* modal-mini */
+.modal-mini{
+    display: none; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1010;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity .15s linear;
+}
+.modal-mini.open{
+    display: block;
+}
+.modal-mini_wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1010;
+    margin: auto;
+    width: 374px;
+    height: 460px;
+    border-radius: 8px;
+    box-shadow: -6px 0px 84px 0 rgba(0, 0, 0, 0.41);
+    background-color: #161616;
+
+}
+.modal-mini_body{
+    padding: 40px 30px;
+}
+
+.black-theme{
+    color:#fff;
 }
