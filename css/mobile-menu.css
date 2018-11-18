@@ -15,10 +15,6 @@
   cursor: pointer;
 }
 
-.btn-menu:focus {
-	outline: 1px dotted #E0AE19;	
-}
-
 .show_menu .btn-menu:focus {
 	outline: none;	
 }
