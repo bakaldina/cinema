@@ -485,6 +485,9 @@
     .calendar-day__numb {
         font-size: 26px;
     }
+    .film.dark-theme .film-extend{
+        margin-top: 10px;
+    }
 }
 @media (max-width: 370px) { 
     .description .firstline .genre,
