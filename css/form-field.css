@@ -5,8 +5,8 @@
 }
 .field-group input:focus + .fg-label,
 .field-group input:not(:focus):valid + .fg-label {
-  top: -18px;
-  left: 4px;
+  top: 9px;
+  left: 20px;
   font-size: 14px;
 }
 .field-group .fg-field {
