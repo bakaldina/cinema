@@ -472,6 +472,12 @@
     .modal-seats_right{
         width: auto;
     }
+    .modal-seats_left{
+        min-height: 650px;
+    }
+    .modal-footer_right{
+        width: calc(100% - 50px);
+    }
     .modal-enter{
         padding: 10px 30px;
     }
