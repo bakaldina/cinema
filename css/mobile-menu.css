@@ -1,14 +1,18 @@
+.head-sticky{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+}
 .btn-menu {
-    display: block;
-    border: 0;
-    width: 40px;
-    height: 25px;
-    background-color: transparent;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 9999;
+  display: block;
+  border: 0;
+  width: 40px;
+  height: 25px;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .btn-menu:focus {
@@ -32,7 +36,7 @@
 	display: block;
 	position: absolute;
 	width: 40px;
-	height: 5px;
+	height: 3px;
 	background-color: #929292;
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
@@ -71,6 +75,9 @@
 	top: 0;
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);	
+}
+.show .head-sticky .head-user .user-ico{
+  stroke: #fff;
 }
 
 .overlay {
@@ -139,10 +146,18 @@ nav ul {
 }
 
 .header-mobile nav ul li{
-
     margin-bottom:40px;
 }
 
+.header-mobile .head-logo--typed{
+  color:var(--white);
+}
+
+@media (min-width: 768px) { 
+  .header-mobile{
+      display: none;
+  }
+}
 @media (max-width: 768px) { 
     body{
         padding-top: 70px;
