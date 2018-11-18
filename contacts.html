@@ -72,18 +72,22 @@
                     </a>
                 </div>
                 <div class="head-user">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user user-ico"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user user-ico">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
                 </div>
             </div>
             <div class="overlay">
                 <nav>
                     <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">Кинотеатр</a></li>
-                    <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Кинотеатр</a></li>
+                        <li><a href="#">Контакты</a></li>
                     </ul>
                 </nav>
-            </div><!-- end overlay -->  
+            </div><!-- end overlay -->
         </div>
     </header>
     <main class='pcontacts'>
@@ -190,38 +194,38 @@
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <script>
-         ymaps.ready(function () {
+        ymaps.ready(function () {
             var myMap = new ymaps.Map('map', {
                 center: [59.931634, 30.353876],
                 zoom: 16
             }, {
-                searchControlProvider: 'yandex#search'
-            }),
+                    searchControlProvider: 'yandex#search'
+                }),
 
-            // Создаём макет содержимого.
-            MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-                '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-            ),
+                // Создаём макет содержимого.
+                MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+                ),
 
-            myPlacemarkWithContent = new ymaps.Placemark([59.931634, 30.353876], {
-                hintContent: 'Невский проспект, 67',
+                myPlacemarkWithContent = new ymaps.Placemark([59.931634, 30.353876], {
+                    hintContent: 'Невский проспект, 67',
 
-            }, {
-                // Опции.
-                // Необходимо указать данный тип макета.
-                iconLayout: 'default#imageWithContent',
-                // Своё изображение иконки метки.
-                iconImageHref: 'assets/img/map-pin.png',
-                // Размеры метки.
-                iconImageSize: [50, 50],
-                // Смещение левого верхнего угла иконки относительно
-                // её "ножки" (точки привязки).
-                iconImageOffset: [-32, -60],
-                // Смещение слоя с содержимым относительно слоя с картинкой.
-                iconContentOffset: [15, 15],
-                // Макет содержимого.
-                iconContentLayout: MyIconContentLayout
-            });
+                }, {
+                        // Опции.
+                        // Необходимо указать данный тип макета.
+                        iconLayout: 'default#imageWithContent',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'assets/img/map-pin.png',
+                        // Размеры метки.
+                        iconImageSize: [50, 55],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-32, -70],
+                        // Смещение слоя с содержимым относительно слоя с картинкой.
+                        iconContentOffset: [15, 15],
+                        // Макет содержимого.
+                        iconContentLayout: MyIconContentLayout
+                    });
 
             myMap.geoObjects
                 .add(myPlacemarkWithContent);
