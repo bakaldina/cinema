@@ -90,9 +90,6 @@ h1 {
 .setting {
     background-color: rgb(248, 248, 248);
 }
-.profile-menu-icon {
-
-}
 .office-navigation_link.active svg g path,
 .office-navigation_link:hover svg g path {
     fill: var(--orange);
