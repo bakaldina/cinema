@@ -6,7 +6,7 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 h1 {
     font-size: 32px;
@@ -33,6 +33,7 @@ h1 {
 }
 .tickets {
     margin-bottom: 20px;
+    margin-top: 60px
 }
 .tickets_item{
     max-width: 485px;
