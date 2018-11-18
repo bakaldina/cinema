@@ -485,12 +485,19 @@
     .modal-seats_right, .modal-seats{
         height: auto;
     }
+    .modal-enter_box{
+        margin-bottom: 20px;
+        padding: 10px 10px 10px 75px;
+    }
+    .modal-enter .pure-u-1:first-child{
+        padding-right: 0;
+    }
     .modal-status,
     .modal-seats_right{
         display: none;
     }
     .modal-head{
-        padding: 10px;
+        padding: 50px 10px 10px;
         flex-direction: column;
     }
 

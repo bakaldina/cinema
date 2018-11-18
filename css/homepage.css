@@ -400,6 +400,10 @@
     }
 }
 @media (max-width: 768px) { 
+    .description .btns{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .film-poster {
         display:none;
     }

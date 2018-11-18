@@ -90,4 +90,13 @@ footer .x-menu-item span {
     color: rgb(102, 102, 102);
 }
 
+@media (max-width: 768px) { 
+    .page-index{
+        height:auto;
+    }
+    .film-hall{
+        margin: 0 30px;
+    }
+}
+
   
