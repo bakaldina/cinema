@@ -18,6 +18,9 @@ body{
 .pure-g{
     font-family: "Futura PT Book", arial;
 }
+.pure-g [class*=pure-u]{
+    font-family: "Futura PT Book", arial;
+}
 *,
 *:before,
 *:after{
@@ -165,7 +168,6 @@ header.header-m{
 .phone {
     font-size: 46px;
     color: rgb(68, 61, 59);
-    line-height: 1.2;
     text-decoration: none;
 }
 .map {

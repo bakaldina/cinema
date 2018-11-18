@@ -62,8 +62,19 @@ h3 {
     #map { 
        height:220px;
     }
+    .pcontacts{
+        padding: 0;
+    }
+    .pcontacts .phone{
+        height: 22px;
+        font-size: 30px;
+    }
+    .pcontacts .address{
+        margin-bottom: 0;
+        font-family: "Futura PT Demi";
+    }
     .pcontacts .aligncenter{
-        padding: 40px 30px 20px;
+        padding: 40px 30px 30px;
     }
     .mobile-order-first{ 
         order:1;
