@@ -24,11 +24,12 @@
     <link rel="stylesheet" href="css/office.css">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
 </head>
 
 <body>
     <header class="head-contacts">
-        <div class="container">
+        <div class="container mobile-hide">
             <div class="pure-g">
                 <div class="pure-u-1">
                     <div class="headmenu-desktop">
@@ -65,6 +66,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="header-mobile">
+            <button class="btn-menu">
+                <span class="bar"></span>
+                <span class="text">Menu</span>
+            </button>
+            <div class="overlay">
+                <nav>
+                    <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Кинотеатр</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div><!-- end overlay -->  
         </div>
     </header>
     <main class='setting'>

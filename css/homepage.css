@@ -138,10 +138,18 @@
     max-width: 485px;
     border: 1px solid rgb(220, 219, 219);
     border-radius: 4px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
 }
-.film-list .pure-u-1:nth-child(2n) .film-list__item {
-    margin: 0 0 0 auto;
+
+@media (min-width: 768px) { 
+    .film-list .pure-u-1:nth-child(2n) .film-list__item {
+        margin: 0 0 0 auto;
+    }
+}
+@media (max-width: 768px) { 
+    .film-poster {
+        display:none;
+    }
 }
   
 .film-poster {
@@ -389,3 +397,4 @@
     transform: rotate(-90deg);
     font-size: 16px;
 }
+
