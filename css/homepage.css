@@ -400,6 +400,10 @@
     }
 }
 @media (max-width: 768px) { 
+    .description .btns{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     .film-poster {
         display:none;
     }
@@ -480,6 +484,9 @@
 @media (max-width: 924px) { 
     .calendar-day__numb {
         font-size: 26px;
+    }
+    .film.dark-theme .film-extend{
+        margin-top: 10px;
     }
 }
 @media (max-width: 370px) { 
