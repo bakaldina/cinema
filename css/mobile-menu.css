@@ -1,7 +1,7 @@
 .head-sticky{
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 0;
   z-index: 9999;
   display: flex;
   justify-content: space-between;
@@ -13,6 +13,9 @@
   height: 25px;
   background-color: transparent;
   cursor: pointer;
+}
+.btn-menu:focus {
+  outline: none;
 }
 
 .show_menu .btn-menu:focus {
@@ -40,7 +43,7 @@
 
 .btn-menu .bar {
 	top: 10px;
-	left: 0;	
+	left: 20px;	
 }
 	
 .btn-menu .bar:before {
@@ -73,9 +76,14 @@
 	transform: rotate(-45deg);	
 }
 .show .head-sticky .head-user .user-ico{
-  stroke: #fff;
+  stroke: #929292;
 }
-
+.show  .header-mobile .head-logo--typed a {
+  color: #fff;
+}
+.show .btn-menu .bar, .show .btn-menu .bar:before, .show .btn-menu .bar:after {
+  width: 30px;
+}
 .overlay {
   width: 0;
   height: 100%;
@@ -109,6 +117,7 @@ nav ul {
   padding: 0;
   opacity: 1;
   transform: translateX(0);
+  margin-top: 100px
 }
 
 .header-mobile  nav a {
@@ -148,6 +157,23 @@ nav ul {
 .header-mobile .head-logo--typed{
   color:var(--white);
 }
+.user-ico {
+  stroke: #929292;
+}
+.head-user {
+  margin-left: 0;
+  position: relative;
+  right: 30px;
+}
+.head-sticky {
+  position: relative;
+  top: 20px;
+  z-index: 9999;
+  display: flex;
+  justify-content: space-between;
+}
+
+
 
 @media (min-width: 768px) { 
   .header-mobile{

@@ -49,7 +49,15 @@ h3 {
 .phone {
     margin-bottom: 20px
 }
-
+.header-mobile .head-logo--typed a {
+    color: var(--orange);
+    font-weight: 900;
+    font-family: sans-serif;
+}
+.header-mobile {
+    width: 100%;
+    height: 70px;
+}
 @media (max-width: 768px) { 
     #map { 
        height:220px;
@@ -62,5 +70,8 @@ h3 {
     }
     .mobile-order-second{ 
         order:2;
+    }
+    .user-ico {
+        stroke: #929292;
     }
 }
