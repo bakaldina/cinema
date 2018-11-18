@@ -5,7 +5,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1010;
+    z-index: 10100;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 15px;
@@ -29,10 +29,13 @@
     margin: auto;
     position: relative;
 }
-.modal-close svg {
+
+.modal-close {
     position: absolute;
     right: -45px;
     top: 0;
+}
+.modal-close svg {
     width: 34px;
     height: 34px;
     cursor: pointer;
@@ -301,7 +304,7 @@
     height: 66px;
     padding: 10px 75px;  
     margin-bottom: 100px;
-    background: url(../assets/img/ticket.png) 16px 20px no-repeat;
+    background: url(../assets/img/ticket.png) 10px center no-repeat;
 }
 .modal-enter_box .time{
     color: var(--orange);
@@ -452,5 +455,44 @@
         position: absolute;
         bottom: auto;
         height: 100vh;
+    }
+}
+
+@media (max-width: 768px) { 
+    .modal{
+        padding: 0;
+    }
+    .modal-head_left,
+    .modal-wrap{
+        width: 100%
+    }
+    .modal-footer_left,
+    .modal-footer_right, 
+    .modal-seats_left,
+    .modal-seats_right{
+        width: auto;
+    }
+    .modal-enter{
+        padding: 10px 30px;
+    }
+    .modal-enter_box,
+    .modal-seats_right, .modal-seats{
+        height: auto;
+    }
+    .modal-status,
+    .modal-seats_right{
+        display: none;
+    }
+    .modal-head{
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .modal-head_right {
+        padding-left: 0;
+    }
+    .modal-close{
+        right:45px;
+        top:20px;
     }
 }
