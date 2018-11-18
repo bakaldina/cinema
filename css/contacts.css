@@ -1,3 +1,9 @@
+html, body, #map {
+    width: 100%; height: 100%; padding: 0; margin: 0;
+}
+#map {
+    height: 600px;
+}
 .head-contacts .head-user, .head-contacts .header-m .x-menu-item span{
     color: var(--black);
 }
