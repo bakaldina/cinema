@@ -28,11 +28,10 @@ h1 {
     box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
 }
 .tickets {
-    display: flex;
     margin-bottom: 20px;
 }
 .tickets_item{
-    min-width: 485px;
+    max-width: 485px;
     height: 190px;
     border-radius: 8px; 
     background-position: center;
@@ -40,7 +39,11 @@ h1 {
     color: rgb(255, 255, 255);
     position: relative;
     padding: 110px 0 0 30px;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.tickets .pure-u-1:nth-child(2n) .tickets_item {
+    margin: 0 0 0 auto;
 }
 .ticket_info svg {
     vertical-align: text-bottom;
@@ -59,7 +62,7 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 50px;
-    background-color: #fff;
+    background-color: rgb(248, 248, 248);
     position: absolute;
     right: -25px;
     top: 50%;
@@ -69,13 +72,13 @@ h1 {
 .tickets_item:before {
     content: '';
     display: inline-block;
-    width: 20px;
-    height: 100%;
+    width: 18px;
+    height: 108%;
     border-radius: 50px;
     position: absolute;
     right: 70px;
-    top: -6px;
-    border-right: 10px dotted #fff;
+    top: -3px;
+    border-right: 6px dotted #fff;
 }
 
 .ticket_title{
@@ -88,4 +91,7 @@ h1 {
 }
 .setting {
     background-color: rgb(248, 248, 248);
+}
+.profile-menu-icon {
+
 }

@@ -5,7 +5,7 @@
     --grey-text:rgb(146, 145, 145);
     --grey-block:#4b535a;
     --blue:#283c64;
-    --light-grey:rgba(255, 255, 255, 0.3);
+    --light-grey:hsla(0, 0%, 100%, 0.3);
     --grey: rgba(255, 255, 255, 0.5);
 }
 
@@ -13,7 +13,7 @@ body{
     font-family: "Futura PT Book", arial;
     font-size: 18px;
     line-height: 1.2;
-    color: rgb(68, 61, 59);
+    color: #443d3b;
 }
 *,
 *:before,
@@ -73,7 +73,7 @@ h3{
 }
 h4{
     font-size: 18px;
-    color: rgb(68, 61, 59);
+    color: #443d3b;
     line-height: 1.333;      
 }
 .aligncenter{
