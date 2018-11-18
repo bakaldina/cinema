@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/base-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/css/inputmask.min.css">
@@ -67,18 +67,26 @@
             </div>
         </div>
         <div class="header-mobile">
-            <button class="btn-menu">
-                <span class="bar"></span>
-                <span class="text">Menu</span>
-            </button>
+            <div class="head-sticky">
+                <button class="btn-menu">
+                    <span class="bar"></span>
+                    <span class="text">Menu</span>
+                </button>
+                <div class="head-logo head-logo--typed">
+                    <a href="index.html">
+                        Художественный
+                    </a>
+                </div>
+                <div class="head-user">
+                    <i data-feather="user" class="user-ico" stroke="#929292"></i>
+                </div>
+            </div>
             <div class="overlay">
                 <nav>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Кинотеатр</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </nav>
             </div><!-- end overlay -->
