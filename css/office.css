@@ -6,7 +6,7 @@
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 h1 {
     font-size: 32px;
@@ -204,6 +204,14 @@ form {
   
 .btns-form:hover {
     background-color: #dd6641;
+}
+.recommendation-films h1 {
+    padding-top: 0
+}
+.field-group .fg-label {
+    color: var(--grey-text);
+    font-size: 16px;
+    top: 17px;
 }
 @media (max-width: 768px) { 
     main{
