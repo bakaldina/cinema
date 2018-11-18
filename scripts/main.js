@@ -19,22 +19,22 @@ $(document).ready(function () {
 
     // Модалки   
 
-    $(document).mouseup(function (e) { // событие клика по веб-документу
+    $(document).mouseup(function (e) {
         if ($('.modal').hasClass('open')) {
-            var div = $(".modal-wrap"); // тут указываем ID элемента
-            if (!div.is(e.target) // если клик был не по нашему блоку
-                && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                $('.modal').removeClass('open'); // скрываем его
+            var div = $(".modal-wrap");
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $('.modal').removeClass('open');
             }
         }
     });
 
-    $(document).mouseup(function (e) { // событие клика по веб-документу
+    $(document).mouseup(function (e) {
         if ($('.modal-mini').hasClass('open')) {
-            var div = $(".modal-mini_wrap"); // тут указываем ID элемента
-            if (!div.is(e.target) // если клик был не по нашему блоку
-                && div.has(e.target).length === 0) { // и не по его дочерним элементам
-                $('.modal-mini').removeClass('open'); // скрываем его
+            var div = $(".modal-mini_wrap");
+            if (!div.is(e.target)
+                && div.has(e.target).length === 0) {
+                $('.modal-mini').removeClass('open');
             }
         }
     });

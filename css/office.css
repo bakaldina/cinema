@@ -3,11 +3,10 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.13);
     min-height: 57px;
-
     display: flex;
     text-align: center;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 h1 {
     font-size: 32px;
@@ -28,6 +27,10 @@ h1 {
     border-bottom: 3px solid  var(--orange);
     box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.18);
 }
+.office-navigation_link:hover svg,
+.office-navigation_link.active svg {
+    stroke: var(--orange)
+}
 .tickets {
     margin-bottom: 20px;
 }
@@ -45,11 +48,6 @@ h1 {
 }
 .ticket_info svg {
     vertical-align: text-bottom;
-    margin-right: 5px;
-}
-.ticket_info img {
-    width: 20px;
-    margin-right: 5px;
 }
 .ticket_info span {
     margin-right: 50px;
@@ -95,19 +93,118 @@ h1 {
     fill: var(--orange);
 }
 .office-navigation_link.active svg
-.office-navigation_link:hover svg{
+.office-navigation_link:hover svg {
     stroke: var(--orange);
 }
 .office-navigation_list{
     display: flex;
 }
 
-
+.profile-menu-icon {
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: 4px;
+}
+.ticket-ico .profile-menu-icon {
+    width: auto;
+}
 .outofoffice{
     border:none;
     background: transparent;
+    margin-right: 20px
+}
+.form-title {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 50px 0 0px 0;
+}
+.form-title span {
+    font-size: 16px;
+    color: var(--grey-text);
+    margin-left: 20px;
 }
 
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 324px;
+    border: 1px solid rgb(220, 219, 219);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.09);
+    color: #000;
+    text-align: left;
+    padding: 5px 0;
+    border-radius: 6px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: -128px;
+    left: 11%;
+    margin-left: -60px;
+    padding: 30px;
+    border-radius: 4px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+.tooltip .tooltiptext::before, .tooltip .tooltiptext::after {
+    content: '';
+    position: absolute;
+    left: 285px;
+    top: -21px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid rgb(220, 219, 219);
+   }
+.tooltip .tooltiptext::after {
+    border-bottom: 10px solid white;
+    top: -19px;
+    left: 290px;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+.field-group {
+    max-width: 340px;
+}
+.btns-form {
+    background-color: var(--orange);
+    background-color: rgb(251, 116, 74);
+    border: none;
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--white);
+    padding: 20px 60px;
+    margin-top: 60px;
+}
+form {
+    margin-bottom: 120px;
+}
+  
+.btns-form:hover {
+    background-color: #dd6641;
+}
 @media (max-width: 768px) { 
     main{
         padding: 30px;
