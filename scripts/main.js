@@ -39,6 +39,7 @@ $(document).ready(function () {
     });
 
 //    head-user .modal-seats_content 
+    //    head-user .modal-seats_content 
     $('.modal-enter').hide();
 
     $('.modal-buy').click(function(){
@@ -54,9 +55,13 @@ $(document).ready(function () {
     $('.open-modal').click(function () {
         $('.modal').addClass('open')
     });
+    $('.modal-close').click(function () {
+        $('.modal').removeClass('open')
+    });
     $('.modal-back').click(function () {
         $('.modal-enter').show()
     });
+
 
     feather.replace();
 

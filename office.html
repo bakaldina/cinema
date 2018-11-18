@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
+    <title>Мой профиль</title>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
@@ -16,26 +16,29 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fonts/FuturaPT/stylesheet.css">
     <link rel="stylesheet" href="css/form-field.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="css/office.css">
 </head>
 
 <body>
-    <header>
+    <header class="head-contacts">
         <div class="container">
             <div class="pure-g">
                 <div class="pure-u-1">
                     <div class="headmenu-desktop">
                         <div class="head-menu--left">
                             <div class="head-logo">
-                                <img src="assets/svg/logo.svg" width='178' alt="Логотип">
+                                <a href="index.html">
+                                    <img src="assets/svg/logo.svg" width='178' alt="Логотип">
+                                </a>
                             </div>
                             <div class="head-menu-back">
-                                <a href="https://kinoneva.ru">Перейти в Неву</a>
+                                <a href="https://kinoneva.ru">Перейти в Неву <i data-feather="arrow-right" class="head-arrow-right"></i></a>
                             </div>
                         </div>
                         <div class="head-menu--right">
                             <nav class="head-menu">
-                                <a href="#" class="x-menu-item">
+                                <a href="index.html" class="x-menu-item">
                                     <span class="x-displayer">Афиша</span>
                                     <span class="x-sizer">Афиша</span>
                                 </a>
@@ -43,15 +46,15 @@
                                     <span class="x-displayer">Кинотеатр</span>
                                     <span class="x-sizer">Кинотеатр</span>
                                 </a>
-                                <a href="#" class="x-menu-item">
+                                <a href="contacts.html" class="x-menu-item">
                                     <span class="x-displayer">Контакты</span>
                                     <span class="x-sizer">Контакты</span>
                                 </a>
                             </nav>
-                            <div class="head-user">
+                            <a href="myticket.html" class="head-user">
                                 <i data-feather="user" class="user-ico"></i>
                                 nickname
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -62,7 +65,7 @@
         <div class="container">
             <h1>Мой профиль</h1>
             <div class="office-navigation">
-                <a href="#" class="office-navigation_link">Мои билеты</a>
+                <a href="myticket.html" class="office-navigation_link">Мои билеты</a>
                 <a href="#" class="office-navigation_link">Поддержка</a>
                 <a href="#" class="office-navigation_link active">Профиль</a>
             </div>
