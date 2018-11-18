@@ -286,7 +286,29 @@ svg {
 
 
 @media (max-width: 768px) { 
+    .footer-logo,
     .mobile-hide{
         display: none;
+    }
+
+    .divflexcenter{
+        flex-flow: column
+    }
+    footer .divflexcenter {
+        margin: 0;
+        align-items: normal;
+    }
+    .footer-col{
+        margin: 0 0 10px;
+    }
+    footer{
+        padding: 30px;
+    }
+    .footer-firstline{
+        padding: 0;
+    }
+    .footer-col--social{
+        width: 100%;
+        padding: 20px 0;
     }
 }
