@@ -155,7 +155,5 @@ nav ul {
   }
 }
 @media (max-width: 768px) { 
-    body{
-        padding-top: 70px;
-    }
+ 
 }

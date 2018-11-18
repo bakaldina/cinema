@@ -447,3 +447,10 @@
 .black-theme{
     color:#fff;
 }
+@media (max-width: 768px) { 
+    .modal-mini_wrap{
+        position: absolute;
+        bottom: auto;
+        height: 100vh;
+    }
+}

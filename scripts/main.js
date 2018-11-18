@@ -74,41 +74,4 @@ $(document).ready(function () {
 
     // для иконок
     feather.replace();
-
-    ymaps.ready(function () {
-        var myMap = new ymaps.Map('map', {
-            center: [59.931634, 30.353876],
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-
-        // Создаём макет содержимого.
-        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-            '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
-        ),
-
-        myPlacemarkWithContent = new ymaps.Placemark([59.931634, 30.353876], {
-            hintContent: 'Невский проспект, 67',
-
-        }, {
-            // Опции.
-            // Необходимо указать данный тип макета.
-            iconLayout: 'default#imageWithContent',
-            // Своё изображение иконки метки.
-            iconImageHref: 'assets/img/map-pin.png',
-            // Размеры метки.
-            iconImageSize: [50, 50],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [-32, -60],
-            // Смещение слоя с содержимым относительно слоя с картинкой.
-            iconContentOffset: [15, 15],
-            // Макет содержимого.
-            iconContentLayout: MyIconContentLayout
-        });
-
-        myMap.geoObjects
-            .add(myPlacemarkWithContent);
-    });
 });
