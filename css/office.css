@@ -226,12 +226,20 @@ form {
 
 
 @media (max-width: 768px) { 
+    .setting {
+        padding-bottom: 30px
+    }
     main{
-        padding: 30px;
+        padding: 0 20px;
     }
     .tickets_item{
-        padding: 125px 0 0 20px
+        padding: 100px 0 0 20px
     }
+    .ticket_info span {
+        margin-right: 0;
+        margin-left: 5px;
+    }
+    
     .office-navigation_list{
         width: 100%;
     }
@@ -270,10 +278,35 @@ form {
     .tooltip .tooltiptext::after{
         left: auto;
     }
+    .recommendation-films .film-list {
+        padding: 0;
+    }
 }
 
 @media (min-width: 768px) { 
     .tickets .pure-u-1:nth-child(2n) .tickets_item {
         margin: 0 0 0 auto;
     }
+}
+@media (max-width: 370px) { 
+.ticket_info span:nth-child(2) {
+    display: block
+}
+.description .firstline .genre,
+.description .firstline .limit,
+.description .firstline .rating,
+.description .firstline .rating-im {
+    margin-right: 5px;
+}
+.film.dark-theme .film-time, .film.dark-theme .film-extend  {
+    margin-right: 5px;
+    margin-left: 2px;
+}
+.headmenu-slider_counter {
+    left: 42%;
+}
+.film-tags span {
+    padding: 4px 6px;
+    margin-right: 5px;
+}
 }
