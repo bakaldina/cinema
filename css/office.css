@@ -2,10 +2,11 @@
 .office-navigation{
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.13);
-    height: 57px;
+    min-height: 57px;
 
     display: flex;
     text-align: center;
+    justify-content: space-between;
     margin-bottom: 60px;
 }
 h1 {
@@ -39,11 +40,8 @@ h1 {
     color: rgb(255, 255, 255);
     position: relative;
     padding: 110px 0 0 30px;
-    margin-bottom: 30px;
+    margin: 0 auto 30px;
     overflow: hidden;
-}
-.tickets .pure-u-1:nth-child(2n) .tickets_item {
-    margin: 0 0 0 auto;
 }
 .ticket_info svg {
     vertical-align: text-bottom;
@@ -94,4 +92,41 @@ h1 {
 }
 .profile-menu-icon {
 
+}
+.office-navigation_link.active svg g path,
+.office-navigation_link:hover svg g path {
+    fill: var(--orange);
+}
+.office-navigation_link.active svg
+.office-navigation_link:hover svg{
+    stroke: var(--orange);
+}
+.office-navigation_list{
+    display: flex;
+}
+
+
+.outofoffice{
+    border:none;
+    background: transparent;
+}
+
+@media (max-width: 768px) { 
+    .divflexcenter,
+    .office-navigation_list{
+        flex-flow: column
+    }
+    .divflexcenter{
+        text-align: center;
+        margin: auto
+    }
+    .footer-logo{
+        margin: auto;
+    }
+}
+
+@media (min-width: 768px) { 
+    .tickets .pure-u-1:nth-child(2n) .tickets_item {
+        margin: 0 0 0 auto;
+    }
 }

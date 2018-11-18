@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    console.log($('.slider-init').length);
+    // слайдер
     if ($('.slider-init').length > 0) {
         $('.slider-init').slick({
             dots: true,
@@ -17,6 +17,7 @@ $(document).ready(function () {
         });
     }
 
+    // Модалки   
 
     $(document).mouseup(function (e) { // событие клика по веб-документу
         if ($('.modal').hasClass('open')) {
@@ -65,7 +66,13 @@ $(document).ready(function () {
         $('.modal-enter').show()
     });
 
+    // мобильное меню
+    var $btn = $('.btn-menu');
+    $btn.click(function () {
+        $('body').toggleClass('show');
+    })
 
+    // для иконок
     feather.replace();
 
     ymaps.ready(function () {
