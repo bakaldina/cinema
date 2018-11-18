@@ -124,6 +124,9 @@ h1 {
     main{
         padding: 30px;
     }
+    .tickets_item{
+        padding: 125px 0 0 20px
+    }
     .office-navigation_list{
         width: 100%;
     }
@@ -131,14 +134,6 @@ h1 {
         min-width: 0;
         width: 50%;
         padding: 0 10px;
-    }
-
-    .divflexcenter{
-        flex-flow: column
-    }
-    .divflexcenter{
-        text-align: center;
-        margin: auto
     }
     .footer-logo{
         margin: auto;
