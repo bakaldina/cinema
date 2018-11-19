@@ -488,6 +488,16 @@
     .film-tags span {
         margin-right: 5px;
     }
+    .calendar-day__numb {
+    font-size: 30px;
+    width: 100%;
+    display: inline-flex;
+    align-items: baseline;
+    }
+    .calendar-day__text {
+        margin-left: 5px;
+    }
+
 }
 @media (max-width: 924px) { 
     .calendar-day__numb {
