@@ -68,6 +68,7 @@
     color: var(--white);
     font-size: 16px;
     border: none;
+    margin-bottom: 10px;
 }
 .modal-head_btn:after {
     content: url(../assets/svg/arrow-right_white.svg);
@@ -456,6 +457,12 @@
         bottom: auto;
         height: 100vh;
         width: 100%;
+    }
+    .btn-signup {
+        width: calc(100% - 101px);
+    }
+    .modal-social {
+        margin: 20px 0;
     }
 }
 

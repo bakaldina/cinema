@@ -281,6 +281,9 @@ svg {
     stroke: var(--grey);
     width: 20px;
 }
+.head-user svg {
+    vertical-align: bottom;
+}
 /* .head-menu-back a:hover  .head-arrow-right {
     border-bottom: 3px solid var(--orange);
     stroke: var(--orange);
@@ -339,5 +342,31 @@ svg {
         width: 100%;
         border-bottom: 1px solid #e2e2e2;
         padding-bottom: 30px;
+    }
+    .film-time.mobile-hide {
+        display: none;
+    }
+    .modal-head .seans-list {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    .modal-head  .film-time, .seans .film-extend {
+        min-width: 100px;
+    }
+    .modal-head .film.dark-theme .film-time {
+        background-color: var(--orange);
+        color: #fff;
+    }
+    .modal_cinema {
+        margin-bottom: 20px;
+    }
+    .modal-wrap .modal-head {
+        padding: 0 30px;
+    }
+    .modal-head_right {
+        margin-bottom: 20px
+    }
+    .modal_title {
+        margin-top: 30px;
     }
 }
