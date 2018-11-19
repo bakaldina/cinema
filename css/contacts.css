@@ -85,4 +85,7 @@ h3 {
     .user-ico {
         stroke: #929292;
     }
+    .director {
+        margin-top: 0;
+    }
 }

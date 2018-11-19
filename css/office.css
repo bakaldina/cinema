@@ -258,7 +258,7 @@ form {
         position: static;
         font-size: 0;
         margin-left: 0;
-        vertical-align: top;
+        vertical-align: middle;
     }
     .tooltip:hover .tooltiptext{
         font-size: 16px;
