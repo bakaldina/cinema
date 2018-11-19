@@ -417,9 +417,7 @@
     .film.dark-theme  .film-extend {
         margin-left: 0;
     }
-    .headmenu-slider__item {
-        height: 100%;
-    }
+
     .headmenu-slider__item .description{
         padding: 0 30px;
         bottom: 180px;
