@@ -417,6 +417,9 @@
     .film.dark-theme  .film-extend {
         margin-left: 0;
     }
+    .headmenu-slider__item {
+        height: 100%;
+    }
     .headmenu-slider__item .description{
         padding: 0 30px;
         bottom: 180px;
@@ -448,6 +451,12 @@
     .slick-prev{
         right: 92px;
         bottom: 64px;
+    }
+    .calendar-day {
+        margin-right: 0;
+    }
+    .calendar-day:first-child {
+        margin-left: 20px;
     }
     .calendar-day__numb {
         font-size: 26px;

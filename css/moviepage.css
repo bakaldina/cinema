@@ -127,6 +127,9 @@ footer .x-menu-item span {
         bottom: 60px;
         width: 100%;
     }
+    .headmenu-slider__item {
+        height: 100%;
+    }
     .description .btns {
         background-position: 35%;
     }
