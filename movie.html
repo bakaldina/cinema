@@ -135,7 +135,7 @@
                             </div>
                         </nav>
                     </div>
-                    <div class="trailer">
+                    <div class="trailer" data-link="https://www.youtube.com/embed/MqZVa7OPMGY">
                         <img src="assets/svg/play-trailer.svg">
                     </div>
                 </div>
@@ -457,11 +457,62 @@
             <div class="modal-close"><i data-feather="x-circle" stroke-width="1"></i></div>
         </div>
     </div>
+    <div class="modaltube">
+        <iframe src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="modal-mini black-theme">
+            <div class="modal-mini_wrap">
+                <div class="modal-mini_body">
+                    <form action="">
+                        <div class="modal-enter_title">Вход в личный кабинет</div>
+                        <label class="field-group">
+                            <input type="email" class="fg-field" required>
+                            <span class="fg-label">Login </span><i data-feather="user" width='16' class="x-circle"></i>
+                        </label>
+                        <label class="field-group">
+                            <input type="email" class="fg-field" required>
+                            <span class="fg-label">Пароль</span><i data-feather="lock" width='16' class="x-circle"></i>
+                        </label>
+                        <button class="btn-signin">Войти</button>
+                        <button class="btn-signup">Зарегистрироваться</button>
+                        <div class="separate-line">
+                            <span class="separate-line_text">или через соц. сети</span>
+                            <hr color="#2c2c2c">
+                        </div>
+                        <div class="modal-social">
+                            <a href="#" class="VK"><img src="assets/img/vk.png" alt="VK"></a>
+                            <a href="#" class="OK"><img src="assets/img/ok.png" alt="OK"></a>
+                            <a href="#" class="FB"><img src="assets/img/fb.png" alt="FB"></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-close modal-mini_close"><i data-feather="x-circle" stroke-width="1"></i></div>
+            </div>
+        </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://unpkg.com/feather-icons"></script>
 
     <script type="text/javascript" src="scripts/main.js"></script>
+    <script>
+
+        $('.trailer').click(function(e){
+          var link = $(this).data('link');
+          $('.modaltube').addClass('open');
+          $('.modaltube').find('iframe').attr('src', link);
+        });
+
+        $(document).mouseup(function (e) {
+          if ($('.modaltube').hasClass('open')) {
+            var div = $("iframe");
+            if (!div.is(e.target)
+              && div.has(e.target).length === 0) {
+              $('.modaltube').removeClass('open');
+            }
+          }
+        });
+
+    </script>
 </body>
 
 </html>

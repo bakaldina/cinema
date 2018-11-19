@@ -281,6 +281,12 @@ form {
     .recommendation-films .film-list {
         padding: 0;
     }
+    .btns-form {
+        width: 100%;
+    }
+    form {
+        margin-bottom: 30px
+    }
 }
 
 @media (min-width: 768px) { 

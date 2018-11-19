@@ -328,5 +328,16 @@ svg {
     }
     .head-logo--typed {
     margin: auto
-}
+    }
+    .footer-col--helpico {
+        margin-bottom: 40px;
+    }
+    footer .divflexcenter {
+        width: 100%;
+    }
+    .footer-col--phoneico {
+        width: 100%;
+        border-bottom: 1px solid #e2e2e2;
+        padding-bottom: 30px;
+    }
 }
