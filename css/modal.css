@@ -68,7 +68,7 @@
     color: var(--white);
     font-size: 16px;
     border: none;
-    margin-bottom: 10px;
+
 }
 .modal-head_btn:after {
     content: url(../assets/svg/arrow-right_white.svg);

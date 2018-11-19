@@ -356,6 +356,12 @@ svg {
     .modal-head .film.dark-theme .film-time {
         background-color: var(--orange);
         color: #fff;
+        border: none;
+        height: 49px;
+        margin-left: 20px
+    }
+    .modal-head .film.dark-theme .film-time:first-child {
+        margin-left: 20px
     }
     .modal_cinema {
         margin-bottom: 20px;
