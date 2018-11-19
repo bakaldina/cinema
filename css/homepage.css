@@ -489,10 +489,11 @@
         margin-right: 5px;
     }
     .calendar-day__numb {
-    font-size: 30px;
-    width: 100%;
-    display: inline-flex;
-    align-items: baseline;
+        font-size: 30px;
+        width: 100%;
+        display: inline-flex;
+        align-items: baseline;
+        flex-wrap: nowrap;
     }
     .calendar-day__text {
         margin-left: 5px;
