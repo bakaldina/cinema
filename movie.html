@@ -512,15 +512,7 @@
                 }
             }
         });
-        $(document).touch(function (e) {
-            if ($('.modaltube').hasClass('open')) {
-                var div = $("iframe");
-                if (!div.is(e.target)
-                    && div.has(e.target).length === 0) {
-                    $('.modaltube').removeClass('open');
-                }
-            }
-        });
+
 
     </script>
 </body>

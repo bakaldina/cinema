@@ -438,7 +438,7 @@
     .slick-next,    
     .slick-prev{
         top: auto;
-        bottom: 45px;
+        bottom: 16px;
         left: auto;
         width: 40px;
         height: 40px;
@@ -448,7 +448,7 @@
     }
     .slick-prev{
         right: 92px;
-        bottom: 64px;
+        bottom: 35px;
     }
     .calendar-day {
         margin-right: 0;
@@ -497,6 +497,9 @@
     }
     .calendar-day__text {
         margin-left: 5px;
+    }
+    .headmenu-slider {
+        height: auto;
     }
 
 }
