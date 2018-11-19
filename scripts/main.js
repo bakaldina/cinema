@@ -3,8 +3,8 @@ $(document).ready(function () {
     if ($('.slider-init').length > 0) {
         $('.slider-init').slick({
             dots: true,
-            autoplay:  false,
-            autoplaySpeed: 2000,
+            autoplay:  true,
+            autoplaySpeed: 3000,
             pauseOnHover: true
         });
         let currentSlide = $('.slider-init').slick('slickCurrentSlide') + 1;

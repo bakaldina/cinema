@@ -67,3 +67,8 @@
   color: rgb(108, 108, 108);
   font-size: 16px;
 }
+.black-theme .field-group .feather {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+}

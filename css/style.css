@@ -295,7 +295,6 @@ svg {
     .mobile-hide{
         display: none;
     }
-
     .divflexcenter{
         flex-flow: column
     }

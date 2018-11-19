@@ -68,8 +68,15 @@ header.header-m {
     border-radius: 4px;
     font-size: 16px;
 }
+.trailer {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin-top: -40px;
+    margin-left: -40px;
+    left: 50%;
 
-  
+}
 
 
 
@@ -110,6 +117,9 @@ footer .x-menu-item span {
     }
     .hall-name {
         width: 100%;
+    }
+    .trailer {
+        top: 35%;
     }
 }
 

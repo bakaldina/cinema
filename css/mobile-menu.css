@@ -178,11 +178,11 @@ nav ul {
   height: 70px;
 }
 
-
 @media (min-width: 768px) { 
   .header-mobile{
       display: none;
   }
+ 
 }
 @media (max-width: 340px) { 
   .header-mobile .head-logo--typed a {
