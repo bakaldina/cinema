@@ -97,6 +97,20 @@ footer .x-menu-item span {
     .film-hall{
         margin: 0 30px;
     }
+    .headmenu-slider__item .description{
+        bottom: 60px;
+        width: 100%;
+    }
+    .description .btns {
+        background-position: 35%;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hall-name {
+        width: 100%;
+    }
 }
 
   

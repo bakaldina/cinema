@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/moviepage.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/form-field.css">
+    <link rel="stylesheet" href="css/mobile-menu.css">
 </head>
 
 <body>
@@ -60,6 +61,35 @@
                 </div>
             </div>
         </div>
+        <div class="header-mobile">
+            <div class="head-sticky">
+                <button class="btn-menu">
+                    <span class="bar"></span>
+                    <span class="text">Menu</span>
+                </button>
+                <div class="head-logo head-logo--typed">
+                    <a href="index.html">
+                        Художественный
+                    </a>
+                </div>
+                <div class="head-user">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user user-ico">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </div>
+            </div>
+            <div class="overlay">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Кинотеатр</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div><!-- end overlay -->
+        </div>
         <div class="headmenu-slider">
             <div class="headmenu-slider__item" style="background-image:url(assets/pict/movie.jpg);">
                 <div class="container">
@@ -82,7 +112,7 @@
                             </button>
                         </div>
                     </div>
-                    <div class="seans">
+                    <div class="seans mobile-hide">
                         <div class="seans-title">Ближайшие сеансы</div>
                         <nav class="seans-list">
                             <div class="film dark-theme">
@@ -156,7 +186,7 @@
                         <div class="film-hall__item">
                             <div class="film">
                                 <div class="hall-name">
-                                    Зал премьер <br> <span class="hall-format">3D</span>
+                                    Зал премьер  <br class="mobile-hide"> <span class="hall-format">3D</span>
                                 </div>
                                 <div class="film-time disabled">
                                     <span class="film-time_hour">17:40</span>
@@ -187,7 +217,7 @@
                         <div class="film-hall__item">
                             <div class="film">
                                 <div class="hall-name">
-                                    Зал 3 <br> <span class="hall-format">2D</span>
+                                    Зал 3 <br class="mobile-hide"> <span class="hall-format">2D</span>
                                 </div>
                                 <div class="film-time disabled">
                                     <span class="film-time_hour">17:40</span>
