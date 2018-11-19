@@ -4,7 +4,7 @@ $(document).ready(function () {
         $('.slider-init').slick({
             dots: true,
             autoplay:  true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 2000,
             pauseOnHover: true
         });
         let currentSlide = $('.slider-init').slick('slickCurrentSlide') + 1;
