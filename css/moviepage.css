@@ -68,7 +68,7 @@ header.header-m {
     border-radius: 4px;
     font-size: 16px;
 }
-.trailer {
+.play {
     position: absolute;
     top: 50%;
     display: inline-block;
@@ -92,10 +92,6 @@ header.header-m {
 }
 .modaltube.open{
     display: flex;
-}
-iframe {
-    width: 80%;
-    height: 600px;
 }
 
 
@@ -143,13 +139,10 @@ footer .x-menu-item span {
     .hall-name {
         width: 100%;
     }
-    .trailer {
+    .play {
         top: 35%;
     }
-    iframe {
-        width: 100%;
-        height: 300px;
-    }
+   
     .footer-col--phoneico {
         border-color:  rgb(102, 102, 102)
     }
