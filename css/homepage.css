@@ -329,6 +329,7 @@
     line-height: 1.2;
     margin: 25px 0;
     max-width: 425px;
+    font-weight: 600;
 }
 .description .btns{
     padding: 15px 25px 15px 45px;
