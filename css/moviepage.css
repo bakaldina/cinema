@@ -124,7 +124,7 @@ footer .x-menu-item span {
         margin: 0 30px;
     }
     .headmenu-slider__item .description{
-        bottom: 60px;
+        top: 400px;
         width: 100%;
     }
     .headmenu-slider__item {
