@@ -124,14 +124,14 @@ footer .x-menu-item span {
         margin: 0 30px;
     }
     .headmenu-slider__item .description{
-        top: 400px;
+        bottom: 30px;
         width: 100%;
     }
     .headmenu-slider__item {
-        height: 100%;
+        height: 650px;
     }
     .description .btns {
-        background-position: 35%;
+        background-position: 31%;
     }
     .buttons {
         display: flex;
@@ -151,6 +151,12 @@ footer .x-menu-item span {
         border-color:  rgb(102, 102, 102)
     }
    
+}
+@media (max-width: 320px) { 
+.headmenu-slider__item .description{
+    bottom: 80px;
+    width: 100%;
+}
 }
 
   
