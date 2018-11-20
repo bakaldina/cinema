@@ -14,9 +14,13 @@ body{
     font-size: 18px;
     line-height: 1.2;
     color: #443d3b;
+    font-style: normal;
+    font-weight: normal;
 }
 .pure-g{
     font-family: "Futura PT Book", arial;
+    font-style: normal;
+    font-weight: normal;
 }
 .pure-g [class*=pure-u]{
     font-family: "Futura PT Book", arial;
