@@ -147,6 +147,26 @@ footer .x-menu-item span {
     .footer-col--phoneico {
         border-color:  rgb(102, 102, 102)
     }
+    .secondline-item-soc:after {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        margin-left: -30px;
+        overflow: hidden;
+        height: 1px;
+        background-color: #2c2c2c;
+        top: -7px;
+    }
+    .secondline-item-soc:before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        margin-left: -30px;
+        overflow: hidden;
+        height: 1px;
+        background-color: #2c2c2c;
+        bottom: 4px;
+    }
    
 }
 @media (max-width: 320px) { 
@@ -156,4 +176,3 @@ footer .x-menu-item span {
 }
 }
 
-  

@@ -323,7 +323,7 @@ svg {
     }
     .footer-link{
         display: flex;
-        flex-flow: column;
+        flex-flow: column-reverse;
         align-items: flex-start;
     }
     .footer-link a{
@@ -341,10 +341,57 @@ svg {
     footer .divflexcenter {
         width: 100%;
     }
-    .footer-col--phoneico {
+    /* .footer-col--phoneico {
         width: 100%;
         border-bottom: 1px solid #e2e2e2;
         padding-bottom: 30px;
+        background-position: 0 19%;
+    } */
+    .footer-secondline {
+        border-top: none;
+        padding: 25px 0 25px 0;
+    }
+    .secondline-item a {
+        display: block;
+        text-align: left;
+    }
+    .secondline-item .footer-col--social a {
+        display: inline;
+        padding-right: 22px;
+    }
+    .footer-col--pay {
+        padding-left: 0;
+        position: absolute;
+        bottom: 142px;
+    }
+    .secondline-item-info {
+        padding-top: 83px;
+    }
+    .secondline-item-info a {
+        padding-bottom: 6px;
+    }
+    .secondline-item-soc {
+        position: relative;
+    }
+    .secondline-item-soc:after {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        margin-left: -30px;
+        overflow: hidden;
+        height: 1px;
+        background-color: #e3e3e3;
+        top: -7px;
+    }
+    .secondline-item-soc:before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        margin-left: -30px;
+        overflow: hidden;
+        height: 1px;
+        background-color: #e3e3e3;
+        bottom: 4px;
     }
     .film-time.mobile-hide {
         display: none;
