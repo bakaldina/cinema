@@ -93,8 +93,6 @@ header.header-m {
 .modaltube.open{
     display: flex;
 }
-
-
 footer {
     background-color: rgb(22, 22, 22);
 }
@@ -137,12 +135,15 @@ footer .x-menu-item span {
         flex-direction: column-reverse;
     }
     .hall-name {
-        width: 100%;
+        min-width: 200px
     }
-    .play {
+    .play{
         top: 35%;
+        display: block;
     }
-   
+    .play img:hover {
+        filter: opacity(0.5);
+    }
     .footer-col--phoneico {
         border-color:  rgb(102, 102, 102)
     }

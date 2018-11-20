@@ -292,7 +292,6 @@ svg {
     stroke: var(--orange);
 }
 
-
 @media (max-width: 768px) { 
     .footer-logo,
     .mobile-hide{
@@ -368,6 +367,7 @@ svg {
     }
     .modal-wrap .modal-head {
         padding: 0 30px;
+        max-height: 220px;
     }
     .modal-head_right {
         margin-bottom: 20px
@@ -375,4 +375,16 @@ svg {
     .modal_title {
         margin-top: 30px;
     }
+}
+@media (max-width: 350px) {
+    .modal-head .film.dark-theme .film-time:first-child {
+        margin-left: 0;
+    }
+    .modal-head .film-time, .seans .film-extend {
+        min-width: 80px;
+    }
+    .modal-close {
+    right: 26px;
+    top: 10px;
+}
 }
