@@ -23,7 +23,7 @@ body {
     height: 100%;
 }
 header.header-m {
-    height: 100vh;
+    height: 700px;
 }
 .calendar-day {
     background-color: rgb(22, 22, 22);
