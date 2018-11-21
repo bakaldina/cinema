@@ -13,7 +13,7 @@
     transition: opacity .15s linear;
 }
 .modal-body {
-    height: calc(100vh - 210px);
+    height: calc(100vh - 219px);
 }
 .modal.open{
     display: block;
@@ -395,10 +395,6 @@
     .modal-buy {
         width: 313px;
     }
-    /* .modal-footer_left
-    .modal-seats_left{
-        width: 687px;
-    } */
     .modal-enter{
         padding: 20px 30px 20px 55px;
     }
@@ -496,9 +492,14 @@
     .modal-footer_right{
         width: calc(100% - 50px);
     }
+    .modal-footer_left
+        background-color: rgba(0,0,0,0.8);
+    }
+  
     .modal-enter{
         padding: 10px 30px;
         margin-bottom: 60px;
+        z-index: 2;
     }
     .modal-seats_right, 
     .modal-seats{
@@ -544,6 +545,7 @@
         display: flex;
         position: fixed;
         width: 100%;
+        z-index: 3;
     }
 
 }
