@@ -47,9 +47,6 @@
 .modal-close svg:hover {
     stroke: var(--orange)
 }
-.modal-close:hover {
-
-}
 .modal-head{
     min-height:150px;
     padding: 20px 0 20px 50px;
@@ -259,12 +256,13 @@
 }
 .modal-seats_right,
 .modal-seats{
-   height: calc(100vh - 210px)
+   height: calc(100vh - 219px);
+   overflow-y: scroll;
 }
 
 .modal-footer_right,
 .modal-seats_right{
-    width:380px;
+    /* width:380px; */
     border-left:1px solid #2c2c2c;
 }
 
@@ -352,7 +350,7 @@
     border-color: rgb(44, 44, 44);
     border-radius: 4px;
     background-color: rgba(251, 116, 74, 0);
-    width: 189px;
+    width: calc(100% - 100px);
     height: 49px;     
     font-size:14px;
     color: rgb(108, 108, 108);
@@ -405,9 +403,9 @@
         width:85px;
         margin-right: 10px;
     }
-    .btn-signup{
+    /* .btn-signup{
         width:171px;
-    }
+    } */
 }
 
 
@@ -492,7 +490,7 @@
     .modal-footer_right{
         width: calc(100% - 50px);
     }
-    .modal-footer_left
+    .modal-footer_left {
         background-color: rgba(0,0,0,0.8);
     }
   
