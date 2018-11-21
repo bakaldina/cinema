@@ -498,14 +498,20 @@
     }
     .modal-enter{
         padding: 10px 30px;
+        margin-bottom: 60px;
     }
-    .modal-enter_box,
-    .modal-seats_right, .modal-seats{
+    .modal-seats_right, 
+    .modal-seats{
         height: calc(100vh - 280px);
+    }
+    .modal-reg .modal-seats_right, 
+    .modal-reg .modal-seats {
+        height: auto;
     }
     .modal-enter_box{
         margin-bottom: 20px;
         padding: 10px 10px 10px 75px;
+        font-size: 13px;
     }
     .modal-enter .pure-u-1:first-child{
         padding-right: 0;
@@ -518,13 +524,12 @@
         padding: 50px 10px 10px;
         flex-direction: column;
     }
-
     .modal-head_right {
         padding-left: 0;
     }
     .modal-close{
-        right:26px;
-        top:20px;
+        right:10px;
+        top:5px;
     }
     .modal-body {
         height: calc(100vh - 280px);
@@ -532,10 +537,23 @@
     .modal-buy {
         width: 100%;
     }
+    .modal-head_left:after {
+        display: none;
+    }
+    .modal-footer {
+        display: flex;
+        position: fixed;
+        width: 100%;
+    }
+
 }
 @media (max-width: 350px) {
     .modal-close {
-    right: 26px;
-    top: 10px;
+    right: 10px;
+    top: 5px;
+}
+.modal-enter_box{
+    padding: 10px 10px 10px 60px;
+    font-size: 12px;
 }
 }
