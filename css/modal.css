@@ -358,6 +358,9 @@
     font-size: 16px;  
     margin-top: 10px;
 }
+.modal-mini_body .btn-signup{
+    width: calc(100% - 120px);
+}
 .btn-signup:hover {
     border-color: var(--orange);
     color: var(--orange);
@@ -444,6 +447,7 @@
 }
 .modal-mini_body{
     padding: 40px 30px;
+    font-size:0;
 }
 
 .black-theme{

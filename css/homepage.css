@@ -101,6 +101,11 @@
     background-color: var(--orange);
     color: var(--white)!important;
 }
+
+.calendar-day.active{
+    background-color: var(--orangeHEX);
+    color: var(--white)!important;
+}
 .calendar-day__numb{
     font-size: 34px;
     line-height: 1.2;
@@ -143,6 +148,9 @@
     border: 1px solid rgb(220, 219, 219);
     border-radius: 4px;
     margin: 0 auto 30px;
+}
+.film-list__item:hover{
+    box-shadow: 0px 15px 39px 0 rgba(47, 50, 66, 0.16);
 }
 
   
