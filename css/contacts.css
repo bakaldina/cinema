@@ -58,6 +58,13 @@ h3 {
     width: 100%;
     height: 70px;
 }
+.secondline-item {
+    display: inline-block;
+    vertical-align: top;
+}
+.secondline-item-soc {
+    float: right;
+}
 @media (max-width: 768px) { 
     #map { 
        height:220px;

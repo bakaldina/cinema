@@ -373,6 +373,7 @@ svg {
     }
     .secondline-item-soc {
         position: relative;
+        float: right;
     }
     .secondline-item-soc:after {
         content: '';
@@ -393,6 +394,10 @@ svg {
         height: 1px;
         background-color: #e3e3e3;
         bottom: 4px;
+    }
+    .secondline-item {
+        display: inline-block;
+        vertical-align: top;
     }
     .film-time.mobile-hide {
         display: none;
