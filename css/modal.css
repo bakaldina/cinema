@@ -350,7 +350,7 @@
     border-color: rgb(44, 44, 44);
     border-radius: 4px;
     background-color: rgba(251, 116, 74, 0);
-    width: calc(100% - 100px);
+    width: calc(100% - 125px);
     height: 49px;     
     font-size:14px;
     color: rgb(108, 108, 108);
@@ -406,9 +406,9 @@
         width:85px;
         margin-right: 10px;
     }
-    /* .btn-signup{
-        width:171px;
-    } */
+    .btn-signup{
+        width:calc(100% - 100px);;
+    }
 }
 
 
