@@ -102,9 +102,10 @@
     color: var(--white)!important;
 }
 
-.calendar-day.active{
-    background-color: var(--orangeHEX);
-    color: var(--white)!important;
+.calendar-day.active .calendar-day__text,
+.calendar-day:hover .calendar-day__text,
+.calendar-day:focus .calendar-day__text {
+    color: var(--orangeHEX);
 }
 .calendar-day__numb{
     font-size: 34px;
