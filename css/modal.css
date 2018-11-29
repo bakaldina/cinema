@@ -13,7 +13,8 @@
     transition: opacity .15s linear;
 }
 .modal-body {
-    height: calc(100vh - 219px);
+    /* height: calc(100vh - 219px); */
+    height: calc(var(--vh, 1vh) * 100 - 219px);
 }
 .modal.open{
     display: block;
@@ -27,7 +28,8 @@
 }
 .modal-wrap {
     width: 90%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    min-height: calc(var(--vh, 1vh) * 100);
     background-color: #161616;
     margin: auto;
     position: relative;
@@ -256,7 +258,8 @@
 }
 .modal-seats_right,
 .modal-seats{
-   height: calc(100vh - 219px);
+   /* height: calc(100vh - 219px); */
+   height: calc(var(--vh, 1vh) * 100 -219px);
    overflow-y: scroll;
 }
 
@@ -471,7 +474,7 @@
     .modal-mini_wrap{
         position: absolute;
         bottom: auto;
-        height: 100vh;
+        /* height: 100vh; */
         height: calc(var(--vh, 1vh) * 100);
         width: 100%;
     }
@@ -511,6 +514,9 @@
     .modal-seats_right{
         width: auto;
     }
+    .modal-seats_left{
+        min-height: 650px;
+    }
     .modal-footer_right{
         width: calc(100% - 50px);
     }
@@ -523,11 +529,9 @@
         z-index: 2;
     }
     /* .modal-seats_right,  */
-    /* .modal-seats{
-        height: calc(100% - 280px);
-    } */
-    .modal-seats_left{
-        min-height: 650px;
+    .modal-seats{
+        /* height: calc(100vh - 280px); */
+        height: calc(var(--vh, 1vh) * 100 - 280px);
     }
     .modal-reg .modal-seats_right, 
     .modal-reg .modal-seats {
@@ -557,7 +561,8 @@
         top:5px;
     }
     .modal-body {
-        height: calc(100vh - 280px);
+        /* height: calc(100vh - 280px); */
+        height: calc(var(--vh, 1vh) * 100) - 280px;
     }
     .modal-buy {
         width: 100%;

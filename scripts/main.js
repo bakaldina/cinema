@@ -88,5 +88,5 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 });
-// if 
-// $('.modal-seats_right').height($(window).height() - '280px');
+
+// document.getElementsByClassName("modal-seats").style.height = window.innerHeight - '219px';
