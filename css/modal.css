@@ -511,9 +511,6 @@
     .modal-seats_right{
         width: auto;
     }
-    .modal-seats_left{
-        min-height: 650px;
-    }
     .modal-footer_right{
         width: calc(100% - 50px);
     }
@@ -525,9 +522,12 @@
         margin-bottom: 60px;
         z-index: 2;
     }
-    .modal-seats_right, 
-    .modal-seats{
-        height: calc(100vh - 280px);
+    /* .modal-seats_right,  */
+    /* .modal-seats{
+        height: calc(100% - 280px);
+    } */
+    .modal-seats_left{
+        min-height: 650px;
     }
     .modal-reg .modal-seats_right, 
     .modal-reg .modal-seats {
